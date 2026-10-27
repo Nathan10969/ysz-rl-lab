@@ -95,6 +95,8 @@ python examples/inspect_state.py
 
 完整训练需要另外准备 Qwen、MACE、训练依赖及合适硬件；DFT 还需要独立的 VASP 使用环境。原始代码、环境记录与公开包能复现的范围见 [复现说明](docs/reproduce.md)。
 
+首版在独立 Python 3.12 环境完成了公开包检查、9 项发布／结果测试、6 项已有晶格／校准测试和 CPU 状态示例。[验证记录](docs/validation.md)
+
 ## 我的角色与 AI 协作
 
 项目由 **[Nathan10969](https://github.com/Nathan10969)** 主导：提出研究问题、确定目标和资源边界、提出质疑、选择方向，并学习和解释实验方法。Claude 与 Codex 参与代码、实验执行、技术复核和文档整理。具体分工与修改依据见 [贡献与协作说明](docs/contributions.md)。
