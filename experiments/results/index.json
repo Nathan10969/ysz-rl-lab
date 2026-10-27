@@ -1,0 +1,533 @@
+[
+  {
+    "job": "diag_randomwalk_val24",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.6272545570373798
+  },
+  {
+    "job": "meta_s0_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.55812629549564
+  },
+  {
+    "job": "meta_s0b_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.71423129543759
+  },
+  {
+    "job": "meta_s1_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.5719683410841299
+  },
+  {
+    "job": "meta_s1_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.9022191937154105
+  },
+  {
+    "job": "meta_s2_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.4087202739220288
+  },
+  {
+    "job": "meta_s2_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 2.0271858111238714
+  },
+  {
+    "job": "meta_s3_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.8534534354946572
+  },
+  {
+    "job": "meta_s3a_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.7088279235716755
+  },
+  {
+    "job": "meta_s3b_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.6835398385870803
+  },
+  {
+    "job": "meta_s4_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.8506775079285565
+  },
+  {
+    "job": "meta_s4a_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.820407590163228
+  },
+  {
+    "job": "meta_s4b_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.5145609423419728
+  },
+  {
+    "job": "meta_s5_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.6513133427291677
+  },
+  {
+    "job": "meta_s5_sft",
+    "status": "COMPLETED",
+    "stage": "sft",
+    "arm": null,
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": null
+  },
+  {
+    "job": "meta_s5_sft_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.7895137891116708
+  },
+  {
+    "job": "meta_s5a_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.7906038674435933
+  },
+  {
+    "job": "meta_s5b_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 2.11068331064007
+  },
+  {
+    "job": "meta_s6_greedy",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "greedy",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 2.5610229039992114
+  },
+  {
+    "job": "meta_s6_menurandom",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "menurandom",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.8351343046736968
+  },
+  {
+    "job": "meta_s6_sft_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.8042340760243671
+  },
+  {
+    "job": "meta_s6a_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.7412651049359056
+  },
+  {
+    "job": "s1_d0sft",
+    "status": "COMPLETED",
+    "stage": "d0sft",
+    "arm": null,
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.22152651495378
+  },
+  {
+    "job": "s1_frozen_blind",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.7550168563307125
+  },
+  {
+    "job": "s1_frozen_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.867462815063817
+  },
+  {
+    "job": "s1_frozen_r2",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 2,
+    "mean_best_of_4_drop_eV": 1.7976362948820679
+  },
+  {
+    "job": "s1_frozen_r3",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 3,
+    "mean_best_of_4_drop_eV": 1.7135068761954813
+  },
+  {
+    "job": "s1_grpo_step_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_step",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.4841744556925676
+  },
+  {
+    "job": "s1_grpo_traj_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.8618043274943261
+  },
+  {
+    "job": "s1_itersft_blind",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "itersft",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.7772919574711068
+  },
+  {
+    "job": "s1_itersft_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "itersft",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 2.190801016671003
+  },
+  {
+    "job": "s1_itersft_r2",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "itersft",
+    "seed": 2026102301,
+    "round": 2,
+    "mean_best_of_4_drop_eV": 1.9688553535096673
+  },
+  {
+    "job": "s1_itersft_r3",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "itersft",
+    "seed": 2026102301,
+    "round": 3,
+    "mean_best_of_4_drop_eV": 1.6399054150247707
+  },
+  {
+    "job": "s1_search_blind",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.8073975286438326
+  },
+  {
+    "job": "s1_search_r0",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.4394609201782573
+  },
+  {
+    "job": "s1_search_r1",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 2.1452935963670825
+  },
+  {
+    "job": "s1_search_r2",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 2,
+    "mean_best_of_4_drop_eV": 1.9326814482327563
+  },
+  {
+    "job": "s1_search_r3",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 3,
+    "mean_best_of_4_drop_eV": 2.02073268450431
+  },
+  {
+    "job": "s2_d0sft",
+    "status": "COMPLETED",
+    "stage": "d0sft",
+    "arm": null,
+    "seed": 2026102302,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.3234996117194073
+  },
+  {
+    "job": "s2_frozen_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "frozen",
+    "seed": 2026102302,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.9845975453448261
+  },
+  {
+    "job": "s2_frozen_r2",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "frozen",
+    "seed": 2026102302,
+    "round": 2,
+    "mean_best_of_4_drop_eV": 1.5145581616655477
+  },
+  {
+    "job": "s2_frozen_r3",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "frozen",
+    "seed": 2026102302,
+    "round": 3,
+    "mean_best_of_4_drop_eV": 1.728934705602427
+  },
+  {
+    "job": "s2_grpo_step_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_step",
+    "seed": 2026102302,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.2817494073932778
+  },
+  {
+    "job": "s2_grpo_traj_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102302,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.9893633499730186
+  },
+  {
+    "job": "s2_grpo_traj_r2",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102302,
+    "round": 2,
+    "mean_best_of_4_drop_eV": 1.5535807445649255
+  },
+  {
+    "job": "s2_itersft_r1",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "itersft",
+    "seed": 2026102302,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.8732142564283834
+  },
+  {
+    "job": "s2_itersft_r2",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "itersft",
+    "seed": 2026102302,
+    "round": 2,
+    "mean_best_of_4_drop_eV": 1.6199354320667112
+  },
+  {
+    "job": "s2_search_r0",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102302,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.4939508970110182
+  },
+  {
+    "job": "s2_search_r1",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102302,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.93125719841467
+  },
+  {
+    "job": "tune_it_1e-4_e2_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.2816874901610618
+  },
+  {
+    "job": "tune_it_1e-4_e4_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.5143569789751723
+  },
+  {
+    "job": "tune_it_2e-4_e2_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.6885338540491261
+  },
+  {
+    "job": "tune_it_2e-4_e4_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.717629201041973
+  },
+  {
+    "job": "tune_it_5e-5_e2_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.4916570134341214
+  },
+  {
+    "job": "tune_it_5e-5_e2_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "itersft",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.6561463128060723
+  },
+  {
+    "job": "tune_it_5e-5_e4_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.4928124323311067
+  },
+  {
+    "job": "tune_sa_010",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.6925893250627269
+  },
+  {
+    "job": "tune_sa_020",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.6223222861888758
+  },
+  {
+    "job": "tune_sa_040",
+    "status": "COMPLETED",
+    "stage": "search",
+    "arm": "search",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.6775512882902603
+  }
+]

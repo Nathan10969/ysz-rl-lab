@@ -1,0 +1,221 @@
+{
+  "job": "meta_s5_sft_eval",
+  "schema": "review12-formal-v1",
+  "status": "COMPLETED",
+  "arm": "frozen",
+  "stage": "blind",
+  "seed": 2026102301,
+  "round": 0,
+  "protocol": "YSZ22_terminal_local2_lbfgs_noise_v2.2",
+  "protocol_sha": "51c0715ab6565c07b553505d935cee492321b1c7d5df30401500cd3b3f45556b",
+  "config": {
+    "grpo_lr": 1e-05,
+    "itersft_epochs": 2,
+    "persistent_optimizer": false,
+    "pool": "val+tune_8",
+    "prompt": "v3",
+    "sa_tmax": 0.2,
+    "sa_tmin": 0.02,
+    "sft_lr": 0.0001,
+    "update_every": 4
+  },
+  "counters": {
+    "attempts": 768,
+    "cache_hits": 1,
+    "forward_calls": 25780,
+    "generated_tokens": 13328,
+    "near_threshold_novelty_events": 42,
+    "novelty_events": 749,
+    "physical_action_attempts": 767,
+    "prefill_tokens": 1634862,
+    "raw_ef": 79079,
+    "relax_actual": 791,
+    "seen_tokens": 1648190,
+    "unmappable_terminals": 0
+  },
+  "limits": {
+    "max_attempts": 8,
+    "max_generated_tokens": 40000,
+    "max_prefill_tokens": 4000000,
+    "max_raw_ef": 200000,
+    "max_relax_actual": 800,
+    "max_seen_tokens": 4000000,
+    "wall_seconds": 6600
+  },
+  "wall_seconds": 2866.5336056873202,
+  "constrained_diagnostics": {
+    "actions": 768,
+    "all_generated_tokens": {
+      "denominator": 13328,
+      "masked_out_probability_mass_max": 0.9991018105647527,
+      "masked_out_probability_mass_mean": 0.09442270571432126,
+      "unconstrained_argmax_outside_allowed_fraction": 0.0703781512605042
+    },
+    "baseline_unconstrained_SFT661_legality": "24/80",
+    "branching_tokens": {
+      "denominator": 3731,
+      "masked_out_probability_mass_max": 0.9902973677963018,
+      "masked_out_probability_mass_mean": 0.16305957602936583,
+      "unconstrained_argmax_outside_allowed_fraction": 0.11551862771374967
+    },
+    "interpretation": "diagnostic on the constrained prefix path; not an unconstrained legality rate",
+    "old_reference_tolerance": 0.001,
+    "old_vs_reference_count": 0,
+    "old_vs_reference_max_abs": null,
+    "phases": {
+      "rollout": 768
+    },
+    "policy_protocol": "review11_prefix_trie_masked_v1",
+    "sampling_recompute_stop": 5.0,
+    "sampling_vs_recompute_max_abs": 0.13358402252197266
+  },
+  "replaced_starts": [],
+  "per_start": [
+    {
+      "start_index": 0,
+      "initial_energy_eV": -2964.2955070131975,
+      "best_energy_eV": -2967.3288275475875,
+      "drop_eV": 3.0333205343899863
+    },
+    {
+      "start_index": 1,
+      "initial_energy_eV": -2966.16369663082,
+      "best_energy_eV": -2966.3686953649985,
+      "drop_eV": 0.20499873417838899
+    },
+    {
+      "start_index": 2,
+      "initial_energy_eV": -2964.936540800338,
+      "best_energy_eV": -2966.3029732829573,
+      "drop_eV": 1.366432482619075
+    },
+    {
+      "start_index": 3,
+      "initial_energy_eV": -2965.1335418317262,
+      "best_energy_eV": -2966.465444952965,
+      "drop_eV": 1.3319031212386108
+    },
+    {
+      "start_index": 4,
+      "initial_energy_eV": -2962.8301115961613,
+      "best_energy_eV": -2967.5580664730624,
+      "drop_eV": 4.727954876901094
+    },
+    {
+      "start_index": 5,
+      "initial_energy_eV": -2965.41305689456,
+      "best_energy_eV": -2966.740701117457,
+      "drop_eV": 1.3276442228966516
+    },
+    {
+      "start_index": 6,
+      "initial_energy_eV": -2965.918120109244,
+      "best_energy_eV": -2967.1820697467842,
+      "drop_eV": 1.2639496375404633
+    },
+    {
+      "start_index": 7,
+      "initial_energy_eV": -2966.356437329772,
+      "best_energy_eV": -2966.724573132277,
+      "drop_eV": 0.36813580250509403
+    },
+    {
+      "start_index": 8,
+      "initial_energy_eV": -2965.169127212596,
+      "best_energy_eV": -2966.360733262927,
+      "drop_eV": 1.191606050331302
+    },
+    {
+      "start_index": 9,
+      "initial_energy_eV": -2963.8182551225245,
+      "best_energy_eV": -2966.351219328773,
+      "drop_eV": 2.53296420624838
+    },
+    {
+      "start_index": 10,
+      "initial_energy_eV": -2963.9526173924673,
+      "best_energy_eV": -2966.3462609135827,
+      "drop_eV": 2.3936435211153366
+    },
+    {
+      "start_index": 11,
+      "initial_energy_eV": -2963.4069664609883,
+      "best_energy_eV": -2965.604189700778,
+      "drop_eV": 2.197223239789764
+    },
+    {
+      "start_index": 12,
+      "initial_energy_eV": -2964.903030163755,
+      "best_energy_eV": -2966.3625312718877,
+      "drop_eV": 1.4595011081328266
+    },
+    {
+      "start_index": 13,
+      "initial_energy_eV": -2966.5106789683655,
+      "best_energy_eV": -2967.264507493407,
+      "drop_eV": 0.7538285250416266
+    },
+    {
+      "start_index": 14,
+      "initial_energy_eV": -2966.17483318953,
+      "best_energy_eV": -2966.448071825582,
+      "drop_eV": 0.2732386360517012
+    },
+    {
+      "start_index": 15,
+      "initial_energy_eV": -2964.1935248170353,
+      "best_energy_eV": -2966.430142667096,
+      "drop_eV": 2.236617850060611
+    },
+    {
+      "start_index": 16,
+      "initial_energy_eV": -2964.8162580922753,
+      "best_energy_eV": -2967.237589161492,
+      "drop_eV": 2.4213310692166488
+    },
+    {
+      "start_index": 17,
+      "initial_energy_eV": -2964.5007626025103,
+      "best_energy_eV": -2966.5845671661596,
+      "drop_eV": 2.0838045636492097
+    },
+    {
+      "start_index": 18,
+      "initial_energy_eV": -2964.479890542353,
+      "best_energy_eV": -2966.586839870639,
+      "drop_eV": 2.1069493282857366
+    },
+    {
+      "start_index": 19,
+      "initial_energy_eV": -2966.512655679576,
+      "best_energy_eV": -2966.956995849185,
+      "drop_eV": 0.44434016960940426
+    },
+    {
+      "start_index": 20,
+      "initial_energy_eV": -2963.6431646656774,
+      "best_energy_eV": -2965.896330630815,
+      "drop_eV": 2.2531659651376685
+    },
+    {
+      "start_index": 21,
+      "initial_energy_eV": -2963.7705048254866,
+      "best_energy_eV": -2967.002667630981,
+      "drop_eV": 3.2321628054942266
+    },
+    {
+      "start_index": 22,
+      "initial_energy_eV": -2963.759433748436,
+      "best_energy_eV": -2966.455771600743,
+      "drop_eV": 2.696337852306897
+    },
+    {
+      "start_index": 23,
+      "initial_energy_eV": -2965.8363250499574,
+      "best_energy_eV": -2966.883601685897,
+      "drop_eV": 1.0472766359393972
+    }
+  ],
+  "mean_best_of_4_drop_eV": 1.7895137891116708,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

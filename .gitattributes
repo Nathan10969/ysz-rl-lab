@@ -1,0 +1,4 @@
+* text=auto
+history/** linguist-documentation=true whitespace=-blank-at-eof
+experiments/** linguist-generated=true
+provenance/** linguist-generated=true

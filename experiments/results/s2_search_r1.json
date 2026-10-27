@@ -1,0 +1,136 @@
+{
+  "job": "s2_search_r1",
+  "schema": "review12-formal-v1",
+  "status": "COMPLETED",
+  "arm": "search",
+  "stage": "search",
+  "seed": 2026102302,
+  "round": 1,
+  "protocol": "YSZ22_terminal_local2_lbfgs_noise_v2.2",
+  "protocol_sha": "51c0715ab6565c07b553505d935cee492321b1c7d5df30401500cd3b3f45556b",
+  "counters": {
+    "attempts": 512,
+    "cache_hits": 0,
+    "forward_calls": 17031,
+    "generated_tokens": 0,
+    "near_threshold_novelty_events": 0,
+    "novelty_events": 0,
+    "physical_action_attempts": 512,
+    "prefill_tokens": 0,
+    "raw_ef": 52407,
+    "relax_actual": 528,
+    "seen_tokens": 0,
+    "unmappable_terminals": 0
+  },
+  "limits": {
+    "max_attempts": 8,
+    "max_generated_tokens": 40000,
+    "max_prefill_tokens": 4000000,
+    "max_raw_ef": 200000,
+    "max_relax_actual": 536,
+    "max_seen_tokens": 4000000,
+    "wall_seconds": 6600
+  },
+  "wall_seconds": 1806.4850374609232,
+  "replaced_starts": [],
+  "per_start": [
+    {
+      "start_index": 0,
+      "initial_energy_eV": -2966.3263919680007,
+      "best_energy_eV": -2966.982218967291,
+      "drop_eV": 0.6558269992901842
+    },
+    {
+      "start_index": 1,
+      "initial_energy_eV": -2963.1551943893996,
+      "best_energy_eV": -2965.759355247532,
+      "drop_eV": 2.604160858132218
+    },
+    {
+      "start_index": 2,
+      "initial_energy_eV": -2963.832753073811,
+      "best_energy_eV": -2966.9045013645405,
+      "drop_eV": 3.0717482907293743
+    },
+    {
+      "start_index": 3,
+      "initial_energy_eV": -2964.872873123907,
+      "best_energy_eV": -2966.3217744310746,
+      "drop_eV": 1.448901307167489
+    },
+    {
+      "start_index": 4,
+      "initial_energy_eV": -2961.8295051623045,
+      "best_energy_eV": -2966.3486961785325,
+      "drop_eV": 4.519191016227978
+    },
+    {
+      "start_index": 5,
+      "initial_energy_eV": -2964.3692638349053,
+      "best_energy_eV": -2966.5964317205103,
+      "drop_eV": 2.227167885605013
+    },
+    {
+      "start_index": 6,
+      "initial_energy_eV": -2965.410104970513,
+      "best_energy_eV": -2966.4656496495018,
+      "drop_eV": 1.0555446789885536
+    },
+    {
+      "start_index": 7,
+      "initial_energy_eV": -2965.0528387644586,
+      "best_energy_eV": -2966.4942254189727,
+      "drop_eV": 1.44138665451419
+    },
+    {
+      "start_index": 8,
+      "initial_energy_eV": -2963.6721708337254,
+      "best_energy_eV": -2967.10295455011,
+      "drop_eV": 3.430783716384667
+    },
+    {
+      "start_index": 9,
+      "initial_energy_eV": -2963.643638440341,
+      "best_energy_eV": -2966.157228971617,
+      "drop_eV": 2.513590531275895
+    },
+    {
+      "start_index": 10,
+      "initial_energy_eV": -2966.190202305641,
+      "best_energy_eV": -2966.9959586543196,
+      "drop_eV": 0.8057563486786421
+    },
+    {
+      "start_index": 11,
+      "initial_energy_eV": -2964.4074245770094,
+      "best_energy_eV": -2966.6746778516804,
+      "drop_eV": 2.2672532746710203
+    },
+    {
+      "start_index": 12,
+      "initial_energy_eV": -2965.1450944919256,
+      "best_energy_eV": -2966.705182572735,
+      "drop_eV": 1.560088080809237
+    },
+    {
+      "start_index": 13,
+      "initial_energy_eV": -2966.0449784766256,
+      "best_energy_eV": -2967.627731592598,
+      "drop_eV": 1.5827531159725368
+    },
+    {
+      "start_index": 14,
+      "initial_energy_eV": -2965.847178919161,
+      "best_energy_eV": -2966.8146722290944,
+      "drop_eV": 0.9674933099336158
+    },
+    {
+      "start_index": 15,
+      "initial_energy_eV": -2965.2519271304677,
+      "best_energy_eV": -2966.000396236722,
+      "drop_eV": 0.748469106254106
+    }
+  ],
+  "mean_best_of_4_drop_eV": 1.93125719841467,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

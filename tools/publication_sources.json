@@ -1,0 +1,778 @@
+{
+  "schema": "ysz-publication-allowlist-v1",
+  "note": "Only these files are copied. New files require an explicit allowlist change. Results use field-level derivation.",
+  "files": [
+    {
+      "source": "BUDGET_REPLAN.md",
+      "destination": "history/records/BUDGET_REPLAN.md"
+    },
+    {
+      "source": "CALIBRATION_REVIEW.md",
+      "destination": "history/records/CALIBRATION_REVIEW.md"
+    },
+    {
+      "source": "CLAUDE05_RESULTS.md",
+      "destination": "history/records/CLAUDE05_RESULTS.md"
+    },
+    {
+      "source": "CLAUDE06_EXECUTION.md",
+      "destination": "history/records/CLAUDE06_EXECUTION.md"
+    },
+    {
+      "source": "CLAUDE06_FINAL_AUDIT.md",
+      "destination": "history/records/CLAUDE06_FINAL_AUDIT.md"
+    },
+    {
+      "source": "CLAUDE06_HALT_20261023.md",
+      "destination": "history/records/CLAUDE06_HALT_20261023.md"
+    },
+    {
+      "source": "CLAUDE06_RESULTS.md",
+      "destination": "history/records/CLAUDE06_RESULTS.md"
+    },
+    {
+      "source": "CLAUDE07_EXECUTION.md",
+      "destination": "history/records/CLAUDE07_EXECUTION.md"
+    },
+    {
+      "source": "CLAUDE07_FINAL_AUDIT.md",
+      "destination": "history/records/CLAUDE07_FINAL_AUDIT.md"
+    },
+    {
+      "source": "CLAUDE07_FOLLOWUP.md",
+      "destination": "history/records/CLAUDE07_FOLLOWUP.md"
+    },
+    {
+      "source": "CLAUDE07_PREFLIGHT.md",
+      "destination": "history/records/CLAUDE07_PREFLIGHT.md"
+    },
+    {
+      "source": "CLAUDE07_RESULTS.md",
+      "destination": "history/records/CLAUDE07_RESULTS.md"
+    },
+    {
+      "source": "CLAUDE08_EXECUTION.md",
+      "destination": "history/records/CLAUDE08_EXECUTION.md"
+    },
+    {
+      "source": "CLAUDE08_FOLLOWUP.md",
+      "destination": "history/records/CLAUDE08_FOLLOWUP.md"
+    },
+    {
+      "source": "CLAUDE09_RESULTS.md",
+      "destination": "history/records/CLAUDE09_RESULTS.md"
+    },
+    {
+      "source": "CLAUDE10_EXECUTION.md",
+      "destination": "history/records/CLAUDE10_EXECUTION.md"
+    },
+    {
+      "source": "CLAUDE10_FOLLOWUP.md",
+      "destination": "history/records/CLAUDE10_FOLLOWUP.md"
+    },
+    {
+      "source": "CLAUDE10_RESULTS.md",
+      "destination": "history/records/CLAUDE10_RESULTS.md"
+    },
+    {
+      "source": "CLAUDE10_V21_FOLLOWUP.md",
+      "destination": "history/records/CLAUDE10_V21_FOLLOWUP.md"
+    },
+    {
+      "source": "CLAUDE10_V21_RESULTS.md",
+      "destination": "history/records/CLAUDE10_V21_RESULTS.md"
+    },
+    {
+      "source": "CLAUDE10_V22_FOLLOWUP.md",
+      "destination": "history/records/CLAUDE10_V22_FOLLOWUP.md"
+    },
+    {
+      "source": "CLAUDE10_V22_RESULTS.md",
+      "destination": "history/records/CLAUDE10_V22_RESULTS.md"
+    },
+    {
+      "source": "CLUSTER_RESOURCE_CHECK_20261022.md",
+      "destination": "history/records/CLUSTER_RESOURCE_CHECK_20261022.md"
+    },
+    {
+      "source": "GPU_PILOT_PLAN.md",
+      "destination": "history/records/GPU_PILOT_PLAN.md"
+    },
+    {
+      "source": "GPU_PILOT_RESULTS.md",
+      "destination": "history/records/GPU_PILOT_RESULTS.md"
+    },
+    {
+      "source": "P0_RESULTS.md",
+      "destination": "history/records/P0_RESULTS.md"
+    },
+    {
+      "source": "PLAN.md",
+      "destination": "history/records/PLAN.md"
+    },
+    {
+      "source": "PROJECT_RECORD_RSI_YSZ.md",
+      "destination": "PROJECT_RECORD_RSI_YSZ.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_01.md",
+      "destination": "history/records/REVIEW_CLAUDE_01.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_02_calibration.md",
+      "destination": "history/records/REVIEW_CLAUDE_02_calibration.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_03_P0.md",
+      "destination": "history/records/REVIEW_CLAUDE_03_P0.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_04_L00.md",
+      "destination": "history/records/REVIEW_CLAUDE_04_L00.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_05_fast_gpu.md",
+      "destination": "history/records/REVIEW_CLAUDE_05_fast_gpu.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_06_release.md",
+      "destination": "history/records/REVIEW_CLAUDE_06_release.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_07_gates.md",
+      "destination": "history/records/REVIEW_CLAUDE_07_gates.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_08_RL_arm.md",
+      "destination": "history/records/REVIEW_CLAUDE_08_RL_arm.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_09_final_protocol.md",
+      "destination": "history/records/REVIEW_CLAUDE_09_final_protocol.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_10_v2_sft.md",
+      "destination": "history/records/REVIEW_CLAUDE_10_v2_sft.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_11_constrained_decoding.md",
+      "destination": "history/records/REVIEW_CLAUDE_11_constrained_decoding.md"
+    },
+    {
+      "source": "REVIEW_CLAUDE_12_formal_execution.md",
+      "destination": "history/records/REVIEW_CLAUDE_12_formal_execution.md"
+    },
+    {
+      "source": "TRAINING_ENV_SPEC.md",
+      "destination": "history/records/TRAINING_ENV_SPEC.md"
+    },
+    {
+      "source": "TRAINING_PLAN_FORMAL.md",
+      "destination": "history/records/TRAINING_PLAN_FORMAL.md"
+    },
+    {
+      "source": "TRAINING_PROBE_PLAN.md",
+      "destination": "history/records/TRAINING_PROBE_PLAN.md"
+    },
+    {
+      "source": "archive/Claude03_before_execution/P0_RESULTS.md",
+      "destination": "history/archive/Claude03_before_execution/P0_RESULTS.md"
+    },
+    {
+      "source": "archive/Claude03_before_execution/PLAN.md",
+      "destination": "history/archive/Claude03_before_execution/PLAN.md"
+    },
+    {
+      "source": "archive/Claude04_before_execution/P0_RESULTS.md",
+      "destination": "history/archive/Claude04_before_execution/P0_RESULTS.md"
+    },
+    {
+      "source": "archive/Claude04_before_execution/PLAN.md",
+      "destination": "history/archive/Claude04_before_execution/PLAN.md"
+    },
+    {
+      "source": "archive/Claude05_before_execution/BUDGET_REPLAN.md",
+      "destination": "history/archive/Claude05_before_execution/BUDGET_REPLAN.md"
+    },
+    {
+      "source": "archive/Claude05_before_execution/GPU_PILOT_RESULTS.md",
+      "destination": "history/archive/Claude05_before_execution/GPU_PILOT_RESULTS.md"
+    },
+    {
+      "source": "archive/Claude05_before_execution/P0_RESULTS.md",
+      "destination": "history/archive/Claude05_before_execution/P0_RESULTS.md"
+    },
+    {
+      "source": "archive/Claude05_before_execution/PLAN.md",
+      "destination": "history/archive/Claude05_before_execution/PLAN.md"
+    },
+    {
+      "source": "archive/Claude06_before_execution/CLAUDE05_RESULTS.md",
+      "destination": "history/archive/Claude06_before_execution/CLAUDE05_RESULTS.md"
+    },
+    {
+      "source": "archive/Claude06_before_execution/PLAN.md",
+      "destination": "history/archive/Claude06_before_execution/PLAN.md"
+    },
+    {
+      "source": "archive/Claude07_before_execution/PLAN.md",
+      "destination": "history/archive/Claude07_before_execution/PLAN.md"
+    },
+    {
+      "source": "archive/PLAN_20261022_before_CPU_smoke.md",
+      "destination": "history/archive/PLAN_20261022_before_CPU_smoke.md"
+    },
+    {
+      "source": "archive/calibration_before_Claude02/CALIBRATION_REVIEW.md",
+      "destination": "history/archive/calibration_before_Claude02/CALIBRATION_REVIEW.md"
+    },
+    {
+      "source": "archive/calibration_before_Claude02/PLAN.md",
+      "destination": "history/archive/calibration_before_Claude02/PLAN.md"
+    },
+    {
+      "source": "archive/calibration_before_Claude02/calibration/README.md",
+      "destination": "history/archive/calibration_before_Claude02/calibration/README.md"
+    },
+    {
+      "source": "archive/review07_before_RL08/BUDGET_REPLAN.md",
+      "destination": "history/archive/review07_before_RL08/BUDGET_REPLAN.md"
+    },
+    {
+      "source": "archive/review07_before_RL08/CLAUDE07_FOLLOWUP.md",
+      "destination": "history/archive/review07_before_RL08/CLAUDE07_FOLLOWUP.md"
+    },
+    {
+      "source": "archive/review07_before_RL08/PLAN.md",
+      "destination": "history/archive/review07_before_RL08/PLAN.md"
+    },
+    {
+      "source": "archive/review07_before_RL08/TRAINING_ENV_SPEC.md",
+      "destination": "history/archive/review07_before_RL08/TRAINING_ENV_SPEC.md"
+    },
+    {
+      "source": "archive/review07_before_RL08/TRAINING_PROBE_PLAN.md",
+      "destination": "history/archive/review07_before_RL08/TRAINING_PROBE_PLAN.md"
+    },
+    {
+      "source": "archive/review08_before_review09/BUDGET_REPLAN.md",
+      "destination": "history/archive/review08_before_review09/BUDGET_REPLAN.md"
+    },
+    {
+      "source": "archive/review08_before_review09/CLAUDE08_EXECUTION.md",
+      "destination": "history/archive/review08_before_review09/CLAUDE08_EXECUTION.md"
+    },
+    {
+      "source": "archive/review08_before_review09/TRAINING_PROBE_PLAN.md",
+      "destination": "history/archive/review08_before_review09/TRAINING_PROBE_PLAN.md"
+    },
+    {
+      "source": "archive/review09_before_review10/BUDGET_REPLAN.md",
+      "destination": "history/archive/review09_before_review10/BUDGET_REPLAN.md"
+    },
+    {
+      "source": "archive/review09_before_review10/CLAUDE08_EXECUTION.md",
+      "destination": "history/archive/review09_before_review10/CLAUDE08_EXECUTION.md"
+    },
+    {
+      "source": "archive/review09_before_review10/CLAUDE08_FOLLOWUP.md",
+      "destination": "history/archive/review09_before_review10/CLAUDE08_FOLLOWUP.md"
+    },
+    {
+      "source": "archive/review09_before_review10/TRAINING_ENV_SPEC.md",
+      "destination": "history/archive/review09_before_review10/TRAINING_ENV_SPEC.md"
+    },
+    {
+      "source": "archive/review09_before_review10/TRAINING_PROBE_PLAN.md",
+      "destination": "history/archive/review09_before_review10/TRAINING_PROBE_PLAN.md"
+    },
+    {
+      "source": "scripts/analyze_p0.py",
+      "destination": "research/scripts/analyze_p0.py"
+    },
+    {
+      "source": "scripts/apply_mps_patch.py",
+      "destination": "research/scripts/apply_mps_patch.py"
+    },
+    {
+      "source": "scripts/audit_calibration_geometry.py",
+      "destination": "research/scripts/audit_calibration_geometry.py"
+    },
+    {
+      "source": "scripts/calibration.py",
+      "destination": "research/scripts/calibration.py"
+    },
+    {
+      "source": "scripts/claude03_gate.py",
+      "destination": "research/scripts/claude03_gate.py"
+    },
+    {
+      "source": "scripts/claude06_safety.py",
+      "destination": "research/scripts/claude06_safety.py"
+    },
+    {
+      "source": "scripts/claude07_safety.py",
+      "destination": "research/scripts/claude07_safety.py"
+    },
+    {
+      "source": "scripts/claude08_data.py",
+      "destination": "research/scripts/claude08_data.py"
+    },
+    {
+      "source": "scripts/claude08_env.py",
+      "destination": "research/scripts/claude08_env.py"
+    },
+    {
+      "source": "scripts/claude08_grpo.py",
+      "destination": "research/scripts/claude08_grpo.py"
+    },
+    {
+      "source": "scripts/claude10_data.py",
+      "destination": "research/scripts/claude10_data.py"
+    },
+    {
+      "source": "scripts/claude10_physics.py",
+      "destination": "research/scripts/claude10_physics.py"
+    },
+    {
+      "source": "scripts/collect_claude06.py",
+      "destination": "research/scripts/collect_claude06.py"
+    },
+    {
+      "source": "scripts/collect_claude07.py",
+      "destination": "research/scripts/collect_claude07.py"
+    },
+    {
+      "source": "scripts/collect_claude07_smoke.py",
+      "destination": "research/scripts/collect_claude07_smoke.py"
+    },
+    {
+      "source": "scripts/collect_gpu_pilot.py",
+      "destination": "research/scripts/collect_gpu_pilot.py"
+    },
+    {
+      "source": "scripts/collect_p0.py",
+      "destination": "research/scripts/collect_p0.py"
+    },
+    {
+      "source": "scripts/lattice.py",
+      "destination": "research/scripts/lattice.py"
+    },
+    {
+      "source": "scripts/prepare_calibration.py",
+      "destination": "research/scripts/prepare_calibration.py"
+    },
+    {
+      "source": "scripts/prepare_claude05.py",
+      "destination": "research/scripts/prepare_claude05.py"
+    },
+    {
+      "source": "scripts/prepare_claude06.py",
+      "destination": "research/scripts/prepare_claude06.py"
+    },
+    {
+      "source": "scripts/prepare_claude06_pool.py",
+      "destination": "research/scripts/prepare_claude06_pool.py"
+    },
+    {
+      "source": "scripts/prepare_claude07.py",
+      "destination": "research/scripts/prepare_claude07.py"
+    },
+    {
+      "source": "scripts/prepare_fast_claude04.py",
+      "destination": "research/scripts/prepare_fast_claude04.py"
+    },
+    {
+      "source": "scripts/prepare_gpu_pilot.py",
+      "destination": "research/scripts/prepare_gpu_pilot.py"
+    },
+    {
+      "source": "scripts/probe_ce.py",
+      "destination": "research/scripts/probe_ce.py"
+    },
+    {
+      "source": "scripts/probe_mace.py",
+      "destination": "research/scripts/probe_mace.py"
+    },
+    {
+      "source": "scripts/render_claude05_report.py",
+      "destination": "research/scripts/render_claude05_report.py"
+    },
+    {
+      "source": "scripts/render_claude06_report.py",
+      "destination": "research/scripts/render_claude06_report.py"
+    },
+    {
+      "source": "scripts/render_claude07_report.py",
+      "destination": "research/scripts/render_claude07_report.py"
+    },
+    {
+      "source": "scripts/render_p0_report.py",
+      "destination": "research/scripts/render_p0_report.py"
+    },
+    {
+      "source": "scripts/retrieve_p0.py",
+      "destination": "research/scripts/retrieve_p0.py"
+    },
+    {
+      "source": "scripts/review05_gate.py",
+      "destination": "research/scripts/review05_gate.py"
+    },
+    {
+      "source": "scripts/review08_followup.py",
+      "destination": "research/scripts/review08_followup.py"
+    },
+    {
+      "source": "scripts/review09_g1_cpu.py",
+      "destination": "research/scripts/review09_g1_cpu.py"
+    },
+    {
+      "source": "scripts/review10_652_cpu.py",
+      "destination": "research/scripts/review10_652_cpu.py"
+    },
+    {
+      "source": "scripts/review10_control.py",
+      "destination": "research/scripts/review10_control.py"
+    },
+    {
+      "source": "scripts/review10_v21_control.py",
+      "destination": "research/scripts/review10_v21_control.py"
+    },
+    {
+      "source": "scripts/review10_v21_teacher_submit.py",
+      "destination": "research/scripts/review10_v21_teacher_submit.py"
+    },
+    {
+      "source": "scripts/review10_v22_control.py",
+      "destination": "research/scripts/review10_v22_control.py"
+    },
+    {
+      "source": "scripts/review10_v22_downstream_submit.py",
+      "destination": "research/scripts/review10_v22_downstream_submit.py"
+    },
+    {
+      "source": "scripts/review10_v22_teacher_submit.py",
+      "destination": "research/scripts/review10_v22_teacher_submit.py"
+    },
+    {
+      "source": "scripts/smoke_collect.py",
+      "destination": "research/scripts/smoke_collect.py"
+    },
+    {
+      "source": "scripts/smoke_common.py",
+      "destination": "research/scripts/smoke_common.py"
+    },
+    {
+      "source": "scripts/smoke_download_qwen.py",
+      "destination": "research/scripts/smoke_download_qwen.py"
+    },
+    {
+      "source": "scripts/smoke_grpo08.py",
+      "destination": "research/scripts/smoke_grpo08.py"
+    },
+    {
+      "source": "scripts/smoke_grpo10.py",
+      "destination": "research/scripts/smoke_grpo10.py"
+    },
+    {
+      "source": "scripts/smoke_mace.py",
+      "destination": "research/scripts/smoke_mace.py"
+    },
+    {
+      "source": "scripts/smoke_prepare.py",
+      "destination": "research/scripts/smoke_prepare.py"
+    },
+    {
+      "source": "scripts/smoke_sft.py",
+      "destination": "research/scripts/smoke_sft.py"
+    },
+    {
+      "source": "scripts/smoke_sft10.py",
+      "destination": "research/scripts/smoke_sft10.py"
+    },
+    {
+      "source": "scripts/smoke_teacher10.py",
+      "destination": "research/scripts/smoke_teacher10.py"
+    },
+    {
+      "source": "scripts/smoke_verify.py",
+      "destination": "research/scripts/smoke_verify.py"
+    },
+    {
+      "source": "scripts/submit_claude05.py",
+      "destination": "research/scripts/submit_claude05.py"
+    },
+    {
+      "source": "scripts/submit_claude06.py",
+      "destination": "research/scripts/submit_claude06.py"
+    },
+    {
+      "source": "scripts/submit_claude07.py",
+      "destination": "research/scripts/submit_claude07.py"
+    },
+    {
+      "source": "scripts/submit_fast_claude04.py",
+      "destination": "research/scripts/submit_fast_claude04.py"
+    },
+    {
+      "source": "scripts/submit_gpu_pilot.py",
+      "destination": "research/scripts/submit_gpu_pilot.py"
+    },
+    {
+      "source": "scripts/submit_p1_claude03.py",
+      "destination": "research/scripts/submit_p1_claude03.py"
+    },
+    {
+      "source": "scripts/submit_smoke_claude07.py",
+      "destination": "research/scripts/submit_smoke_claude07.py"
+    },
+    {
+      "source": "scripts/sync_claude06_control.py",
+      "destination": "research/scripts/sync_claude06_control.py"
+    },
+    {
+      "source": "scripts/sync_claude07_control.py",
+      "destination": "research/scripts/sync_claude07_control.py"
+    },
+    {
+      "source": "scripts/test_calibration.py",
+      "destination": "research/scripts/test_calibration.py"
+    },
+    {
+      "source": "scripts/test_claude03_gate.py",
+      "destination": "research/scripts/test_claude03_gate.py"
+    },
+    {
+      "source": "scripts/test_claude06_safety.py",
+      "destination": "research/scripts/test_claude06_safety.py"
+    },
+    {
+      "source": "scripts/test_claude07_collection.py",
+      "destination": "research/scripts/test_claude07_collection.py"
+    },
+    {
+      "source": "scripts/test_claude07_safety.py",
+      "destination": "research/scripts/test_claude07_safety.py"
+    },
+    {
+      "source": "scripts/test_claude07_smoke_collection.py",
+      "destination": "research/scripts/test_claude07_smoke_collection.py"
+    },
+    {
+      "source": "scripts/test_claude08_data.py",
+      "destination": "research/scripts/test_claude08_data.py"
+    },
+    {
+      "source": "scripts/test_claude08_env.py",
+      "destination": "research/scripts/test_claude08_env.py"
+    },
+    {
+      "source": "scripts/test_claude08_grpo.py",
+      "destination": "research/scripts/test_claude08_grpo.py"
+    },
+    {
+      "source": "scripts/test_lattice.py",
+      "destination": "research/scripts/test_lattice.py"
+    },
+    {
+      "source": "scripts/test_review05_gate.py",
+      "destination": "research/scripts/test_review05_gate.py"
+    },
+    {
+      "source": "scripts/test_review08_followup.py",
+      "destination": "research/scripts/test_review08_followup.py"
+    },
+    {
+      "source": "scripts/test_smoke_grpo08.py",
+      "destination": "research/scripts/test_smoke_grpo08.py"
+    },
+    {
+      "source": "scripts/test_smoke_mace_protocol.py",
+      "destination": "research/scripts/test_smoke_mace_protocol.py"
+    },
+    {
+      "source": "scripts/test_submit_smoke_claude07.py",
+      "destination": "research/scripts/test_submit_smoke_claude07.py"
+    },
+    {
+      "source": "scripts/update_claude07_status.py",
+      "destination": "research/scripts/update_claude07_status.py"
+    },
+    {
+      "source": "scripts/verify_calibration.py",
+      "destination": "research/scripts/verify_calibration.py"
+    },
+    {
+      "source": "scripts/verify_claude06.py",
+      "destination": "research/scripts/verify_claude06.py"
+    },
+    {
+      "source": "tests/test_claude10_control.py",
+      "destination": "research/tests/test_claude10_control.py"
+    },
+    {
+      "source": "tests/test_claude10_data.py",
+      "destination": "research/tests/test_claude10_data.py"
+    },
+    {
+      "source": "tests/test_claude10_grpo.py",
+      "destination": "research/tests/test_claude10_grpo.py"
+    },
+    {
+      "source": "tests/test_claude10_physics.py",
+      "destination": "research/tests/test_claude10_physics.py"
+    },
+    {
+      "source": "tests/test_claude10_sft.py",
+      "destination": "research/tests/test_claude10_sft.py"
+    },
+    {
+      "source": "tests/test_claude10_submission.py",
+      "destination": "research/tests/test_claude10_submission.py"
+    },
+    {
+      "source": "tests/test_claude10_teacher.py",
+      "destination": "research/tests/test_claude10_teacher.py"
+    },
+    {
+      "source": "tests/test_claude10_v21_control_guard.py",
+      "destination": "research/tests/test_claude10_v21_control_guard.py"
+    },
+    {
+      "source": "tests/test_review10_652_cpu.py",
+      "destination": "research/tests/test_review10_652_cpu.py"
+    },
+    {
+      "source": "tests/test_review10_v21_control.py",
+      "destination": "research/tests/test_review10_v21_control.py"
+    },
+    {
+      "source": "tests/test_review10_v21_teacher_submit.py",
+      "destination": "research/tests/test_review10_v21_teacher_submit.py"
+    },
+    {
+      "source": "tests/test_review10_v22_control.py",
+      "destination": "research/tests/test_review10_v22_control.py"
+    },
+    {
+      "source": "tests/test_review10_v22_downstream_submit.py",
+      "destination": "research/tests/test_review10_v22_downstream_submit.py"
+    },
+    {
+      "source": "tests/test_review10_v22_teacher_submit.py",
+      "destination": "research/tests/test_review10_v22_teacher_submit.py"
+    },
+    {
+      "source": "formal12/scripts/calibration.py",
+      "destination": "research/formal12/scripts/calibration.py"
+    },
+    {
+      "source": "formal12/scripts/claude08_data.py",
+      "destination": "research/formal12/scripts/claude08_data.py"
+    },
+    {
+      "source": "formal12/scripts/claude08_env.py",
+      "destination": "research/formal12/scripts/claude08_env.py"
+    },
+    {
+      "source": "formal12/scripts/claude08_grpo.py",
+      "destination": "research/formal12/scripts/claude08_grpo.py"
+    },
+    {
+      "source": "formal12/scripts/claude10_data.py",
+      "destination": "research/formal12/scripts/claude10_data.py"
+    },
+    {
+      "source": "formal12/scripts/claude10_physics.py",
+      "destination": "research/formal12/scripts/claude10_physics.py"
+    },
+    {
+      "source": "formal12/scripts/constrained.py",
+      "destination": "research/formal12/scripts/constrained.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_actor.py",
+      "destination": "research/formal12/scripts/formal12_actor.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_common.py",
+      "destination": "research/formal12/scripts/formal12_common.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_l1.py",
+      "destination": "research/formal12/scripts/formal12_l1.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_menu.py",
+      "destination": "research/formal12/scripts/formal12_menu.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_prompt.py",
+      "destination": "research/formal12/scripts/formal12_prompt.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_rl.py",
+      "destination": "research/formal12/scripts/formal12_rl.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_search.py",
+      "destination": "research/formal12/scripts/formal12_search.py"
+    },
+    {
+      "source": "formal12/scripts/lattice.py",
+      "destination": "research/formal12/scripts/lattice.py"
+    },
+    {
+      "source": "formal12/scripts/md_diffusion.py",
+      "destination": "research/formal12/scripts/md_diffusion.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_common.py",
+      "destination": "research/formal12/scripts/smoke_common.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_grpo08.py",
+      "destination": "research/formal12/scripts/smoke_grpo08.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_grpo10.py",
+      "destination": "research/formal12/scripts/smoke_grpo10.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_grpo11.py",
+      "destination": "research/formal12/scripts/smoke_grpo11.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_mace.py",
+      "destination": "research/formal12/scripts/smoke_mace.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_sft10.py",
+      "destination": "research/formal12/scripts/smoke_sft10.py"
+    },
+    {
+      "source": "formal12/scripts/smoke_teacher10.py",
+      "destination": "research/formal12/scripts/smoke_teacher10.py"
+    },
+    {
+      "source": "formal12/META_LOG.md",
+      "destination": "history/formal12/META_LOG.md"
+    },
+    {
+      "source": "formal12/val_metric.py",
+      "destination": "research/formal12/val_metric.py"
+    },
+    {
+      "source": "formal12/greedy_weights.json",
+      "destination": "research/formal12/greedy_weights.json"
+    },
+    {
+      "source": "requirements-lock.txt",
+      "destination": "research/requirements-lock.txt"
+    },
+    {
+      "source": "TRAINING_ENV_SPEC.md",
+      "destination": "docs/experiments/environment-original.md"
+    }
+  ]
+}

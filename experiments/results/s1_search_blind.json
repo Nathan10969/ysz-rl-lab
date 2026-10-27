@@ -1,0 +1,52 @@
+{
+  "job": "s1_search_blind",
+  "schema": "review12-formal-v1",
+  "status": "COMPLETED",
+  "arm": "search",
+  "stage": "blind",
+  "seed": 2026102301,
+  "round": 0,
+  "protocol": "YSZ22_terminal_local2_lbfgs_noise_v2.2",
+  "protocol_sha": "51c0715ab6565c07b553505d935cee492321b1c7d5df30401500cd3b3f45556b",
+  "counters": {
+    "attempts": 64,
+    "cache_hits": 1,
+    "forward_calls": 2305,
+    "generated_tokens": 0,
+    "near_threshold_novelty_events": 0,
+    "novelty_events": 0,
+    "physical_action_attempts": 64,
+    "prefill_tokens": 0,
+    "raw_ef": 6656,
+    "relax_actual": 65,
+    "seen_tokens": 0,
+    "unmappable_terminals": 0
+  },
+  "limits": {
+    "max_attempts": 8,
+    "max_generated_tokens": 40000,
+    "max_prefill_tokens": 4000000,
+    "max_raw_ef": 200000,
+    "max_relax_actual": 74,
+    "max_seen_tokens": 4000000,
+    "wall_seconds": 6600
+  },
+  "wall_seconds": 201.68034103512764,
+  "replaced_starts": [],
+  "per_start": [
+    {
+      "start_index": 0,
+      "initial_energy_eV": -2964.726380605022,
+      "best_energy_eV": -2966.232098747448,
+      "drop_eV": 1.5057181424263035
+    },
+    {
+      "start_index": 1,
+      "initial_energy_eV": -2965.307543728654,
+      "best_energy_eV": -2967.416620643515,
+      "drop_eV": 2.1090769148613617
+    }
+  ],
+  "mean_best_of_4_drop_eV": 1.8073975286438326,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

@@ -1,0 +1,162 @@
+{
+  "job": "s1_frozen_r3",
+  "schema": "review12-formal-v1",
+  "status": "COMPLETED",
+  "arm": "frozen",
+  "stage": "round",
+  "seed": 2026102301,
+  "round": 3,
+  "protocol": "YSZ22_terminal_local2_lbfgs_noise_v2.2",
+  "protocol_sha": "51c0715ab6565c07b553505d935cee492321b1c7d5df30401500cd3b3f45556b",
+  "counters": {
+    "attempts": 512,
+    "cache_hits": 1,
+    "forward_calls": 16184,
+    "generated_tokens": 8933,
+    "near_threshold_novelty_events": 20,
+    "novelty_events": 503,
+    "physical_action_attempts": 511,
+    "prefill_tokens": 836703,
+    "raw_ef": 50549,
+    "relax_actual": 527,
+    "seen_tokens": 845636,
+    "unmappable_terminals": 0
+  },
+  "limits": {
+    "max_attempts": 8,
+    "max_generated_tokens": 40000,
+    "max_prefill_tokens": 4000000,
+    "max_raw_ef": 200000,
+    "max_relax_actual": 536,
+    "max_seen_tokens": 4000000,
+    "wall_seconds": 6600
+  },
+  "wall_seconds": 1832.3628049120307,
+  "constrained_diagnostics": {
+    "actions": 512,
+    "all_generated_tokens": {
+      "denominator": 8933,
+      "masked_out_probability_mass_max": 0.9975894324015826,
+      "masked_out_probability_mass_mean": 0.09475679895249452,
+      "unconstrained_argmax_outside_allowed_fraction": 0.07030113063920296
+    },
+    "baseline_unconstrained_SFT661_legality": "24/80",
+    "branching_tokens": {
+      "denominator": 2485,
+      "masked_out_probability_mass_max": 0.9962155686225742,
+      "masked_out_probability_mass_mean": 0.16162840184414576,
+      "unconstrained_argmax_outside_allowed_fraction": 0.11509054325955734
+    },
+    "interpretation": "diagnostic on the constrained prefix path; not an unconstrained legality rate",
+    "old_reference_tolerance": 0.001,
+    "old_vs_reference_count": 0,
+    "old_vs_reference_max_abs": null,
+    "phases": {
+      "rollout": 512
+    },
+    "policy_protocol": "review11_prefix_trie_masked_v1",
+    "sampling_recompute_stop": 5.0,
+    "sampling_vs_recompute_max_abs": 0.20433223247528076
+  },
+  "replaced_starts": [],
+  "per_start": [
+    {
+      "start_index": 0,
+      "initial_energy_eV": -2966.5420440736575,
+      "best_energy_eV": -2967.001214365905,
+      "drop_eV": 0.45917029224756334
+    },
+    {
+      "start_index": 1,
+      "initial_energy_eV": -2965.6717438849696,
+      "best_energy_eV": -2966.5623337574025,
+      "drop_eV": 0.8905898724328836
+    },
+    {
+      "start_index": 2,
+      "initial_energy_eV": -2964.324582220436,
+      "best_energy_eV": -2967.3148401360468,
+      "drop_eV": 2.9902579156109823
+    },
+    {
+      "start_index": 3,
+      "initial_energy_eV": -2965.719286466837,
+      "best_energy_eV": -2966.882356926153,
+      "drop_eV": 1.163070459316259
+    },
+    {
+      "start_index": 4,
+      "initial_energy_eV": -2964.416342055509,
+      "best_energy_eV": -2966.461697794464,
+      "drop_eV": 2.0453557389546404
+    },
+    {
+      "start_index": 5,
+      "initial_energy_eV": -2965.207275463528,
+      "best_energy_eV": -2966.604218727259,
+      "drop_eV": 1.396943263731373
+    },
+    {
+      "start_index": 6,
+      "initial_energy_eV": -2964.992713197633,
+      "best_energy_eV": -2966.3869206407,
+      "drop_eV": 1.394207443066989
+    },
+    {
+      "start_index": 7,
+      "initial_energy_eV": -2967.401427555077,
+      "best_energy_eV": -2967.5514015119306,
+      "drop_eV": 0.14997395685350057
+    },
+    {
+      "start_index": 8,
+      "initial_energy_eV": -2963.976089916309,
+      "best_energy_eV": -2967.6086705194084,
+      "drop_eV": 3.632580603099541
+    },
+    {
+      "start_index": 9,
+      "initial_energy_eV": -2963.52986694811,
+      "best_energy_eV": -2966.0340426549915,
+      "drop_eV": 2.504175706881597
+    },
+    {
+      "start_index": 10,
+      "initial_energy_eV": -2964.930145977144,
+      "best_energy_eV": -2966.7843402651765,
+      "drop_eV": 1.8541942880324314
+    },
+    {
+      "start_index": 11,
+      "initial_energy_eV": -2965.1109841147463,
+      "best_energy_eV": -2965.7874542524405,
+      "drop_eV": 0.6764701376941957
+    },
+    {
+      "start_index": 12,
+      "initial_energy_eV": -2965.6805764383557,
+      "best_energy_eV": -2967.4476637192033,
+      "drop_eV": 1.7670872808475906
+    },
+    {
+      "start_index": 13,
+      "initial_energy_eV": -2965.444763386418,
+      "best_energy_eV": -2967.0719441881756,
+      "drop_eV": 1.6271808017577314
+    },
+    {
+      "start_index": 14,
+      "initial_energy_eV": -2963.0669619171817,
+      "best_energy_eV": -2966.517999598307,
+      "drop_eV": 3.451037681125399
+    },
+    {
+      "start_index": 15,
+      "initial_energy_eV": -2965.5539867549946,
+      "best_energy_eV": -2966.9678013324697,
+      "drop_eV": 1.4138145774750228
+    }
+  ],
+  "mean_best_of_4_drop_eV": 1.7135068761954813,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

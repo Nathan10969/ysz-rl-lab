@@ -1,0 +1,125 @@
+{
+  "job": "tune_it_1e-4_e4_eval",
+  "schema": "review12-formal-v1",
+  "status": "COMPLETED",
+  "arm": "frozen",
+  "stage": "blind",
+  "seed": 2026102301,
+  "round": 0,
+  "protocol": "YSZ22_terminal_local2_lbfgs_noise_v2.2",
+  "protocol_sha": "51c0715ab6565c07b553505d935cee492321b1c7d5df30401500cd3b3f45556b",
+  "config": {
+    "grpo_lr": 1e-05,
+    "itersft_epochs": 2,
+    "persistent_optimizer": false,
+    "pool": "val",
+    "prompt": "v2",
+    "sa_tmax": 0.2,
+    "sa_tmin": 0.02,
+    "sft_lr": 0.0001,
+    "update_every": 4
+  },
+  "counters": {
+    "attempts": 256,
+    "cache_hits": 1,
+    "forward_calls": 8788,
+    "generated_tokens": 4504,
+    "near_threshold_novelty_events": 13,
+    "novelty_events": 252,
+    "physical_action_attempts": 255,
+    "prefill_tokens": 417072,
+    "raw_ef": 26965,
+    "relax_actual": 263,
+    "seen_tokens": 421576,
+    "unmappable_terminals": 0
+  },
+  "limits": {
+    "max_attempts": 8,
+    "max_generated_tokens": 40000,
+    "max_prefill_tokens": 4000000,
+    "max_raw_ef": 200000,
+    "max_relax_actual": 272,
+    "max_seen_tokens": 4000000,
+    "wall_seconds": 6600
+  },
+  "wall_seconds": 1002.9381822943687,
+  "constrained_diagnostics": {
+    "actions": 256,
+    "all_generated_tokens": {
+      "denominator": 4504,
+      "masked_out_probability_mass_max": 0.9999599921284243,
+      "masked_out_probability_mass_mean": 0.07100975047970463,
+      "unconstrained_argmax_outside_allowed_fraction": 0.05794849023090586
+    },
+    "baseline_unconstrained_SFT661_legality": "24/80",
+    "branching_tokens": {
+      "denominator": 1318,
+      "masked_out_probability_mass_max": 0.9988186217378825,
+      "masked_out_probability_mass_mean": 0.12230675835010478,
+      "unconstrained_argmax_outside_allowed_fraction": 0.08952959028831563
+    },
+    "interpretation": "diagnostic on the constrained prefix path; not an unconstrained legality rate",
+    "old_reference_tolerance": 0.001,
+    "old_vs_reference_count": 0,
+    "old_vs_reference_max_abs": null,
+    "phases": {
+      "rollout": 256
+    },
+    "policy_protocol": "review11_prefix_trie_masked_v1",
+    "sampling_recompute_stop": 5.0,
+    "sampling_vs_recompute_max_abs": 0.23494553565979004
+  },
+  "replaced_starts": [],
+  "per_start": [
+    {
+      "start_index": 0,
+      "initial_energy_eV": -2964.295507013197,
+      "best_energy_eV": -2965.9048864352967,
+      "drop_eV": 1.6093794220996642
+    },
+    {
+      "start_index": 1,
+      "initial_energy_eV": -2966.1636966308956,
+      "best_energy_eV": -2967.394504308929,
+      "drop_eV": 1.2308076780332158
+    },
+    {
+      "start_index": 2,
+      "initial_energy_eV": -2964.9365408003387,
+      "best_energy_eV": -2966.1051962331476,
+      "drop_eV": 1.1686554328089187
+    },
+    {
+      "start_index": 3,
+      "initial_energy_eV": -2965.133541831725,
+      "best_energy_eV": -2965.885520843276,
+      "drop_eV": 0.7519790115511569
+    },
+    {
+      "start_index": 4,
+      "initial_energy_eV": -2962.8301115962063,
+      "best_energy_eV": -2966.230344956263,
+      "drop_eV": 3.400233360056518
+    },
+    {
+      "start_index": 5,
+      "initial_energy_eV": -2965.41305689456,
+      "best_energy_eV": -2967.007103214065,
+      "drop_eV": 1.5940463195047414
+    },
+    {
+      "start_index": 6,
+      "initial_energy_eV": -2965.9181201092433,
+      "best_energy_eV": -2967.0398607005523,
+      "drop_eV": 1.121740591308935
+    },
+    {
+      "start_index": 7,
+      "initial_energy_eV": -2966.3564373297763,
+      "best_energy_eV": -2967.5944513462146,
+      "drop_eV": 1.2380140164382283
+    }
+  ],
+  "mean_best_of_4_drop_eV": 1.5143569789751723,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

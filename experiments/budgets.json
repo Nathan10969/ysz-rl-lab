@@ -1,0 +1,2078 @@
+{
+  "FORMAL_TRAINING_POOL.json": {
+    "schema": "formal12-pool-v1",
+    "authorized_card_hours": 90,
+    "actual_card_hours": 32.82000000000001,
+    "reserved_card_hours": 1.5,
+    "actual_plus_reserved": 34.32000000000001,
+    "updated_at_utc": "2026-10-27T06:02:12.214055+00:00",
+    "jobs": [
+      {
+        "name": "s1_d0sft",
+        "slurm_job_id": "676",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1373,
+        "actual_card_hours": 0.3813888888888889,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_frozen_r1",
+        "slurm_job_id": "677",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1891,
+        "actual_card_hours": 0.5252777777777777,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_itersft_r1",
+        "slurm_job_id": "678",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1937,
+        "actual_card_hours": 0.5380555555555555,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_r1",
+        "slurm_job_id": "679",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2135,
+        "actual_card_hours": 0.5930555555555556,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_r1",
+        "slurm_job_id": "680",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2364,
+        "actual_card_hours": 0.6566666666666666,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r0",
+        "slurm_job_id": "681",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1320,
+        "actual_card_hours": 0.36666666666666664,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r1#failed",
+        "slurm_job_id": "682",
+        "state": "FAILED",
+        "elapsed_seconds": 1397,
+        "actual_card_hours": 0.38805555555555554,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_frozen_r2#pathbug",
+        "slurm_job_id": "691",
+        "state": "FAILED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_itersft_r2#pathbug",
+        "slurm_job_id": "692",
+        "state": "FAILED",
+        "elapsed_seconds": 1,
+        "actual_card_hours": 0.0002777777777777778,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_grpo_traj_r2#pathbug",
+        "slurm_job_id": "693",
+        "state": "FAILED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_grpo_step_r2#pathbug",
+        "slurm_job_id": "694",
+        "state": "FAILED",
+        "elapsed_seconds": 1,
+        "actual_card_hours": 0.0002777777777777778,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_search_r2#cancelled",
+        "slurm_job_id": "695",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s1_frozen_r3#pathbug",
+        "slurm_job_id": "696",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_itersft_r3#pathbug",
+        "slurm_job_id": "697",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_grpo_traj_r3#pathbug",
+        "slurm_job_id": "698",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_grpo_step_r3#pathbug",
+        "slurm_job_id": "699",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s1_search_r3#cancelled",
+        "slurm_job_id": "700",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s1_frozen_blind#pathbug",
+        "slurm_job_id": "701",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s1_itersft_blind#pathbug",
+        "slurm_job_id": "702",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s1_grpo_traj_blind#pathbug",
+        "slurm_job_id": "703",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s1_grpo_step_blind#pathbug",
+        "slurm_job_id": "704",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s1_search_blind#cancelled",
+        "slurm_job_id": "705",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s2_d0sft#pathbug",
+        "slurm_job_id": "706",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s2_frozen_r1#pathbug",
+        "slurm_job_id": "707",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_itersft_r1#pathbug",
+        "slurm_job_id": "708",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_grpo_traj_r1#pathbug",
+        "slurm_job_id": "709",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_grpo_step_r1#pathbug",
+        "slurm_job_id": "710",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_search_r0#pathbug",
+        "slurm_job_id": "711",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s2_search_r1#pathbug",
+        "slurm_job_id": "712",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s2_frozen_r2#pathbug",
+        "slurm_job_id": "713",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_itersft_r2#pathbug",
+        "slurm_job_id": "714",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_grpo_traj_r2#pathbug",
+        "slurm_job_id": "715",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_grpo_step_r2#pathbug",
+        "slurm_job_id": "716",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_search_r2#pathbug",
+        "slurm_job_id": "717",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s2_frozen_r3#pathbug",
+        "slurm_job_id": "718",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_itersft_r3#pathbug",
+        "slurm_job_id": "719",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_grpo_traj_r3#pathbug",
+        "slurm_job_id": "720",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_grpo_step_r3#pathbug",
+        "slurm_job_id": "721",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s2_search_r3#pathbug",
+        "slurm_job_id": "722",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s2_frozen_blind#pathbug",
+        "slurm_job_id": "723",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s2_itersft_blind#pathbug",
+        "slurm_job_id": "724",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s2_grpo_traj_blind#pathbug",
+        "slurm_job_id": "725",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s2_grpo_step_blind#pathbug",
+        "slurm_job_id": "726",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s2_search_blind#pathbug",
+        "slurm_job_id": "727",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "s3_d0sft#pathbug",
+        "slurm_job_id": "728",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s3_frozen_r1#pathbug",
+        "slurm_job_id": "729",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s3_itersft_r1#pathbug",
+        "slurm_job_id": "730",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s3_grpo_traj_r1#pathbug",
+        "slurm_job_id": "731",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s3_grpo_step_r1#pathbug",
+        "slurm_job_id": "732",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "s3_search_r0#pathbug",
+        "slurm_job_id": "733",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "s1_search_r1#pathbug",
+        "slurm_job_id": "734",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r2#pathbug",
+        "slurm_job_id": "735",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r3#pathbug",
+        "slurm_job_id": "736",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_blind#pathbug",
+        "slurm_job_id": "737",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_search_r1#pathbug",
+        "slurm_job_id": "739",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_r2#pathbug",
+        "slurm_job_id": "741",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_itersft_r2#pathbug",
+        "slurm_job_id": "742",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_traj_r2#pathbug",
+        "slurm_job_id": "743",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_step_r2#pathbug",
+        "slurm_job_id": "744",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_search_r2#pathbug",
+        "slurm_job_id": "745",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_r3#pathbug",
+        "slurm_job_id": "746",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_itersft_r3#pathbug",
+        "slurm_job_id": "747",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_traj_r3#pathbug",
+        "slurm_job_id": "748",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r1",
+        "slurm_job_id": "749",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1684,
+        "actual_card_hours": 0.4677777777777778,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_frozen_r2",
+        "slurm_job_id": "750",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1992,
+        "actual_card_hours": 0.5533333333333333,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_itersft_r2",
+        "slurm_job_id": "751",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1903,
+        "actual_card_hours": 0.5286111111111111,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_r2#capbug",
+        "slurm_job_id": "752",
+        "state": "FAILED",
+        "elapsed_seconds": 2013,
+        "actual_card_hours": 0.5591666666666667,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_r2#cancelled_oldcode",
+        "slurm_job_id": "753",
+        "state": "CANCELLED",
+        "elapsed_seconds": 136,
+        "actual_card_hours": 0.03777777777777778,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r2",
+        "slurm_job_id": "754",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1460,
+        "actual_card_hours": 0.40555555555555556,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_frozen_r3",
+        "slurm_job_id": "755",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1836,
+        "actual_card_hours": 0.51,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_itersft_r3",
+        "slurm_job_id": "756",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1960,
+        "actual_card_hours": 0.5444444444444444,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_r3#cancelled_upstream_752",
+        "slurm_job_id": "757",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_r3#cancelled_oldcode",
+        "slurm_job_id": "758",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_r3",
+        "slurm_job_id": "759",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1450,
+        "actual_card_hours": 0.4027777777777778,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_frozen_blind",
+        "slurm_job_id": "760",
+        "state": "COMPLETED",
+        "elapsed_seconds": 271,
+        "actual_card_hours": 0.07527777777777778,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_itersft_blind",
+        "slurm_job_id": "761",
+        "state": "COMPLETED",
+        "elapsed_seconds": 260,
+        "actual_card_hours": 0.07222222222222222,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_blind#cancelled_upstream_752",
+        "slurm_job_id": "762",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_blind#cancelled_oldcode",
+        "slurm_job_id": "763",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_search_blind",
+        "slurm_job_id": "764",
+        "state": "COMPLETED",
+        "elapsed_seconds": 205,
+        "actual_card_hours": 0.05694444444444444,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_d0sft",
+        "slurm_job_id": "765",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1377,
+        "actual_card_hours": 0.3825,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_frozen_r1",
+        "slurm_job_id": "766",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1995,
+        "actual_card_hours": 0.5541666666666667,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_itersft_r1",
+        "slurm_job_id": "767",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1917,
+        "actual_card_hours": 0.5325,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_traj_r1",
+        "slurm_job_id": "768",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2062,
+        "actual_card_hours": 0.5727777777777778,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_step_r1",
+        "slurm_job_id": "769",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2571,
+        "actual_card_hours": 0.7141666666666666,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_search_r0",
+        "slurm_job_id": "770",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1511,
+        "actual_card_hours": 0.4197222222222222,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_search_r1",
+        "slurm_job_id": "771",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1811,
+        "actual_card_hours": 0.5030555555555556,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_frozen_r2",
+        "slurm_job_id": "772",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1998,
+        "actual_card_hours": 0.555,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_itersft_r2",
+        "slurm_job_id": "773",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2002,
+        "actual_card_hours": 0.5561111111111111,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_traj_r2",
+        "slurm_job_id": "774",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2094,
+        "actual_card_hours": 0.5816666666666667,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_step_r2#paused_tuning",
+        "slurm_job_id": "775",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_search_r2#paused_tuning",
+        "slurm_job_id": "776",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_frozen_r3",
+        "slurm_job_id": "777",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2036,
+        "actual_card_hours": 0.5655555555555556,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_itersft_r3#paused_tuning",
+        "slurm_job_id": "778",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_traj_r3#paused_tuning",
+        "slurm_job_id": "779",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_step_r3#paused_tuning",
+        "slurm_job_id": "780",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_search_r3#paused_tuning",
+        "slurm_job_id": "781",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_frozen_blind",
+        "slurm_job_id": "782",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_itersft_blind#paused_tuning",
+        "slurm_job_id": "783",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_traj_blind#paused_tuning",
+        "slurm_job_id": "784",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_grpo_step_blind#paused_tuning",
+        "slurm_job_id": "785",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s2_search_blind#paused_tuning",
+        "slurm_job_id": "786",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_d0sft",
+        "slurm_job_id": "787",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_r1",
+        "slurm_job_id": "788",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_itersft_r1#paused_tuning",
+        "slurm_job_id": "789",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_traj_r1#paused_tuning",
+        "slurm_job_id": "790",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_step_r1#paused_tuning",
+        "slurm_job_id": "791",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_search_r0#paused_tuning",
+        "slurm_job_id": "792",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_search_r1#paused_tuning",
+        "slurm_job_id": "793",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_r2",
+        "slurm_job_id": "794",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_itersft_r2#paused_tuning",
+        "slurm_job_id": "795",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_traj_r2#paused_tuning",
+        "slurm_job_id": "796",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_grpo_step_r2#paused_tuning",
+        "slurm_job_id": "797",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_l1calib#cancelled_cap25",
+        "slurm_job_id": "799",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_r2#cancelled_cap25",
+        "slurm_job_id": "802",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_r3#cancelled_cap25",
+        "slurm_job_id": "803",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_traj_blind#cancelled_cap25",
+        "slurm_job_id": "804",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_r2#cancelled_cap25",
+        "slurm_job_id": "805",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_r3#cancelled_cap25",
+        "slurm_job_id": "806",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_grpo_step_blind#cancelled_cap25",
+        "slurm_job_id": "807",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_search_r2#cancelled_cap25",
+        "slurm_job_id": "812",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_r3#cancelled_cap25",
+        "slurm_job_id": "813",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_itersft_r3#cancelled_cap25",
+        "slurm_job_id": "814",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s1_l1calib",
+        "slurm_job_id": "840",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_r3",
+        "slurm_job_id": "841",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "s3_frozen_blind",
+        "slurm_job_id": "842",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 2
+      },
+      {
+        "name": "meta_s0_eval",
+        "slurm_job_id": "843",
+        "state": "COMPLETED",
+        "elapsed_seconds": 979,
+        "actual_card_hours": 0.27194444444444443,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "meta_s1_train",
+        "slurm_job_id": "844",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2069,
+        "actual_card_hours": 0.5747222222222222,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s1_eval",
+        "slurm_job_id": "845",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1000,
+        "actual_card_hours": 0.2777777777777778,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_sa_020",
+        "slurm_job_id": "846",
+        "state": "COMPLETED",
+        "elapsed_seconds": 754,
+        "actual_card_hours": 0.20944444444444443,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_sa_010",
+        "slurm_job_id": "847",
+        "state": "COMPLETED",
+        "elapsed_seconds": 765,
+        "actual_card_hours": 0.2125,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_sa_040",
+        "slurm_job_id": "848",
+        "state": "COMPLETED",
+        "elapsed_seconds": 762,
+        "actual_card_hours": 0.21166666666666667,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_5e-5_e2_train",
+        "slurm_job_id": "849",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e2_eval",
+        "slurm_job_id": "850",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_5e-5_e4_train",
+        "slurm_job_id": "851",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_eval",
+        "slurm_job_id": "852",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_1e-4_e2_train",
+        "slurm_job_id": "853",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_eval",
+        "slurm_job_id": "854",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_1e-4_e4_train",
+        "slurm_job_id": "855",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_eval",
+        "slurm_job_id": "856",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_2e-4_e2_train",
+        "slurm_job_id": "857",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_eval",
+        "slurm_job_id": "858",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_2e-4_e4_train",
+        "slurm_job_id": "859",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_eval",
+        "slurm_job_id": "860",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "meta_s2_train",
+        "slurm_job_id": "864",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2102,
+        "actual_card_hours": 0.5838888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s2_eval",
+        "slurm_job_id": "865",
+        "state": "COMPLETED",
+        "elapsed_seconds": 980,
+        "actual_card_hours": 0.2722222222222222,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_5e-5_e2_train",
+        "slurm_job_id": "866",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2061,
+        "actual_card_hours": 0.5725,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e2_eval",
+        "slurm_job_id": "867",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_5e-5_e4_train",
+        "slurm_job_id": "868",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_eval",
+        "slurm_job_id": "869",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_1e-4_e2_train",
+        "slurm_job_id": "870",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_eval",
+        "slurm_job_id": "871",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_1e-4_e4_train",
+        "slurm_job_id": "872",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_eval",
+        "slurm_job_id": "873",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_2e-4_e2_train",
+        "slurm_job_id": "874",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_eval",
+        "slurm_job_id": "875",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "tune_it_2e-4_e4_train",
+        "slurm_job_id": "876",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_eval",
+        "slurm_job_id": "877",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 0.833
+      },
+      {
+        "name": "meta_s0b_eval",
+        "slurm_job_id": "883",
+        "state": "COMPLETED",
+        "elapsed_seconds": 3059,
+        "actual_card_hours": 0.8497222222222223,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s3a_train",
+        "slurm_job_id": "884",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2156,
+        "actual_card_hours": 0.5988888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s3b_train",
+        "slurm_job_id": "885",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2153,
+        "actual_card_hours": 0.5980555555555556,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s3_eval",
+        "slurm_job_id": "886",
+        "state": "COMPLETED",
+        "elapsed_seconds": 3029,
+        "actual_card_hours": 0.8413888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e2_eval",
+        "slurm_job_id": "887",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_train",
+        "slurm_job_id": "888",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_eval",
+        "slurm_job_id": "889",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_train",
+        "slurm_job_id": "890",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_eval",
+        "slurm_job_id": "891",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_train",
+        "slurm_job_id": "892",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_eval",
+        "slurm_job_id": "893",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_train",
+        "slurm_job_id": "894",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_eval",
+        "slurm_job_id": "895",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_train",
+        "slurm_job_id": "896",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_eval",
+        "slurm_job_id": "897",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "diag_randomwalk_val24",
+        "slurm_job_id": "909",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2408,
+        "actual_card_hours": 0.6688888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e2_eval",
+        "slurm_job_id": "910",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_train",
+        "slurm_job_id": "911",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_eval",
+        "slurm_job_id": "912",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_train",
+        "slurm_job_id": "913",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_eval",
+        "slurm_job_id": "914",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_train",
+        "slurm_job_id": "915",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_eval",
+        "slurm_job_id": "916",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_train",
+        "slurm_job_id": "917",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_eval",
+        "slurm_job_id": "918",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_train",
+        "slurm_job_id": "919",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_eval",
+        "slurm_job_id": "920",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s4a_train",
+        "slurm_job_id": "922",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2143,
+        "actual_card_hours": 0.5952777777777778,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s4b_train",
+        "slurm_job_id": "923",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2145,
+        "actual_card_hours": 0.5958333333333333,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s4_eval",
+        "slurm_job_id": "924",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2968,
+        "actual_card_hours": 0.8244444444444444,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e2_eval",
+        "slurm_job_id": "925",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_train",
+        "slurm_job_id": "926",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_eval",
+        "slurm_job_id": "927",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_train",
+        "slurm_job_id": "928",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_eval",
+        "slurm_job_id": "929",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_train",
+        "slurm_job_id": "930",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_eval",
+        "slurm_job_id": "931",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_train",
+        "slurm_job_id": "932",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_eval",
+        "slurm_job_id": "933",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_train",
+        "slurm_job_id": "934",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_eval",
+        "slurm_job_id": "935",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s5_sft",
+        "slurm_job_id": "945",
+        "state": "COMPLETED",
+        "elapsed_seconds": 61,
+        "actual_card_hours": 0.016944444444444446,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s5_sft_eval",
+        "slurm_job_id": "946",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2871,
+        "actual_card_hours": 0.7975,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s5a_train",
+        "slurm_job_id": "947",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2080,
+        "actual_card_hours": 0.5777777777777777,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s5b_train",
+        "slurm_job_id": "948",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2275,
+        "actual_card_hours": 0.6319444444444444,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s5_eval",
+        "slurm_job_id": "949",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2871,
+        "actual_card_hours": 0.7975,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e2_eval",
+        "slurm_job_id": "950",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1018,
+        "actual_card_hours": 0.2827777777777778,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_train",
+        "slurm_job_id": "951",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2030,
+        "actual_card_hours": 0.5638888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_5e-5_e4_eval",
+        "slurm_job_id": "952",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1020,
+        "actual_card_hours": 0.2833333333333333,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_train",
+        "slurm_job_id": "953",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1991,
+        "actual_card_hours": 0.5530555555555555,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e2_eval",
+        "slurm_job_id": "954",
+        "state": "COMPLETED",
+        "elapsed_seconds": 971,
+        "actual_card_hours": 0.2697222222222222,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_train",
+        "slurm_job_id": "955",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2019,
+        "actual_card_hours": 0.5608333333333333,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_1e-4_e4_eval",
+        "slurm_job_id": "956",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1006,
+        "actual_card_hours": 0.27944444444444444,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_train",
+        "slurm_job_id": "957",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1925,
+        "actual_card_hours": 0.5347222222222222,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e2_eval",
+        "slurm_job_id": "958",
+        "state": "COMPLETED",
+        "elapsed_seconds": 967,
+        "actual_card_hours": 0.26861111111111113,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_train",
+        "slurm_job_id": "959",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1955,
+        "actual_card_hours": 0.5430555555555555,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "tune_it_2e-4_e4_eval",
+        "slurm_job_id": "960",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1003,
+        "actual_card_hours": 0.2786111111111111,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_sft",
+        "slurm_job_id": "968",
+        "state": "FAILED",
+        "elapsed_seconds": 311,
+        "actual_card_hours": 0.08638888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_greedy",
+        "slurm_job_id": "969",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2369,
+        "actual_card_hours": 0.6580555555555555,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_menurandom",
+        "slurm_job_id": "970",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2279,
+        "actual_card_hours": 0.6330555555555556,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_sft_eval",
+        "slurm_job_id": "971",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6a_train",
+        "slurm_job_id": "972",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6b_train",
+        "slurm_job_id": "973",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_eval",
+        "slurm_job_id": "974",
+        "state": "CANCELLED",
+        "elapsed_seconds": 0,
+        "actual_card_hours": 0.0,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_sft",
+        "slurm_job_id": "975",
+        "state": "COMPLETED",
+        "elapsed_seconds": 311,
+        "actual_card_hours": 0.08638888888888889,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_sft_eval",
+        "slurm_job_id": "976",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2612,
+        "actual_card_hours": 0.7255555555555555,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6a_train",
+        "slurm_job_id": "977",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1881,
+        "actual_card_hours": 0.5225,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6b_train",
+        "slurm_job_id": "978",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1830,
+        "actual_card_hours": 0.5083333333333333,
+        "hard_card_hours": 1.5
+      },
+      {
+        "name": "meta_s6_eval",
+        "slurm_job_id": "979",
+        "state": "RUNNING",
+        "elapsed_seconds": 19,
+        "hard_card_hours": 1.5
+      }
+    ],
+    "note": "Snapshot of the local accounting ledger; missing fields are not assumed to be zero."
+  },
+  "FORMAL_DFT_DIAG.json": {
+    "schema": "formal12-dft-diag-v1",
+    "actual_card_hours": 8.421666666666667,
+    "reserved_card_hours": 0,
+    "updated_at_utc": "2026-10-27T06:02:12.886132+00:00",
+    "pool_actual_before_card_hours": 20.486944444444443,
+    "diag_cap_card_hours": 18.6,
+    "jobs": [
+      {
+        "slurm_job_id": "685",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1280,
+        "card_hours": 0.35555555555555557,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "686",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1247,
+        "card_hours": 0.3463888888888889,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "687",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1248,
+        "card_hours": 0.3466666666666667,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "688",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1269,
+        "card_hours": 0.3525,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "689",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1271,
+        "card_hours": 0.35305555555555557,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "690",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1280,
+        "card_hours": 0.35555555555555557,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "861",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1253,
+        "card_hours": 0.34805555555555556,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "862",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1276,
+        "card_hours": 0.35444444444444445,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "863",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1258,
+        "card_hours": 0.34944444444444445,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "878",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1252,
+        "card_hours": 0.3477777777777778,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "879",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1318,
+        "card_hours": 0.3661111111111111,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "880",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1253,
+        "card_hours": 0.34805555555555556,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "902",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1241,
+        "card_hours": 0.3447222222222222,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "907",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1260,
+        "card_hours": 0.35,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "908",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1263,
+        "card_hours": 0.35083333333333333,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "921",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1272,
+        "card_hours": 0.35333333333333333,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "936",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1257,
+        "card_hours": 0.3491666666666667,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "937",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1256,
+        "card_hours": 0.3488888888888889,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "944",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1265,
+        "card_hours": 0.35138888888888886,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "961",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1271,
+        "card_hours": 0.35305555555555557,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "962",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1254,
+        "card_hours": 0.34833333333333333,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "963",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1242,
+        "card_hours": 0.345,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "964",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1248,
+        "card_hours": 0.3466666666666667,
+        "terminal": true
+      },
+      {
+        "slurm_job_id": "967",
+        "state": "COMPLETED",
+        "elapsed_seconds": 1284,
+        "card_hours": 0.3566666666666667,
+        "terminal": true
+      }
+    ],
+    "note": "Snapshot of the local accounting ledger; missing fields are not assumed to be zero."
+  },
+  "FORMAL_MD_POOL.json": {
+    "schema": "formal12-md-v1",
+    "authorized_card_hours": 40.0,
+    "actual_card_hours": 0.5341666666666667,
+    "updated_at_utc": "2026-10-27T06:02:12.886132+00:00",
+    "jobs": [
+      {
+        "slurm_job_id": "738",
+        "state": "CANCELLED",
+        "elapsed_seconds": 1923,
+        "card_hours": 0.5341666666666667,
+        "terminal": true
+      }
+    ],
+    "note": "Snapshot of the local accounting ledger; missing fields are not assumed to be zero."
+  },
+  "BUDGET.json": {
+    "authorized_card_hours": 10,
+    "actual_card_hours": 1.2255555555555557,
+    "jobs": [
+      {
+        "slurm_job_id": "633",
+        "state": "COMPLETED",
+        "actual_card_hours": 0.009722222222222222
+      },
+      {
+        "slurm_job_id": "635",
+        "state": "FAILED",
+        "actual_card_hours": 0.0025
+      },
+      {
+        "name": "ysz_c08_mace_retry",
+        "slurm_job_id": "648",
+        "state": "COMPLETED",
+        "actual_card_hours": 0.01
+      },
+      {
+        "name": "ysz_c08_grpo",
+        "slurm_job_id": "650",
+        "state": "COMPLETED",
+        "actual_card_hours": 0.02
+      },
+      {
+        "name": "ysz_c10_teacher",
+        "slurm_job_id": "652",
+        "state": "FAILED",
+        "actual_card_hours": 0.14083333333333334
+      },
+      {
+        "name": "ysz_c10v21_teacher",
+        "slurm_job_id": "656",
+        "state": "FAILED",
+        "actual_card_hours": 0.0425
+      },
+      {
+        "name": "ysz_c10v22_teacher",
+        "slurm_job_id": "659",
+        "state": "COMPLETED",
+        "actual_card_hours": 0.36444444444444446
+      },
+      {
+        "name": "ysz_c10v22_sft",
+        "slurm_job_id": "661",
+        "state": "FAILED",
+        "actual_card_hours": 0.36333333333333334
+      },
+      {
+        "slurm_job_id": "671",
+        "state": "FAILED",
+        "actual_card_hours": 0.005833333333333334
+      },
+      {
+        "slurm_job_id": "672",
+        "state": "COMPLETED",
+        "actual_card_hours": 0.2663888888888889
+      }
+    ],
+    "note": "Snapshot of the local accounting ledger; missing fields are not assumed to be zero."
+  }
+}

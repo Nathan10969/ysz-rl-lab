@@ -1,0 +1,7 @@
+{
+ "coef_dNN": 0.07666600110740183,
+ "coef_dNNN": -0.08017777486080024,
+ "intercept": -0.06681960606735551,
+ "n": 348,
+ "source": "s1_d0sft chains (training data only)"
+}
