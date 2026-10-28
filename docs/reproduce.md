@@ -6,6 +6,7 @@ Python 3.10+，使用根目录 `requirements-cpu.txt`。运行 README 中的检�
 
 - `tools/check_publication.py`：检查公开文件范围、凭据形态、源码语法、来源哈希和整理文档链接。
 - `tools/results.py`：用保存的逐起点能量重算均值、起点重采样标准误差及配对差。
+- `tools/results.py --write`：同时复算已保存开发菜单网格的选参规则，输出 `experiments/diagnostics/menu_grid_summary.json`。这是保存读数的复算；从模型重新计算 C 还需要未随仓库发布的 adapter 与菜单输入。
 - `examples/inspect_state.py`：用真实晶格代码生成组成，列出合法动作并打印局部特征。没有能量模型调用。
 - `tests/`：验证导出、配对起点校验和公开结果一致性。
 

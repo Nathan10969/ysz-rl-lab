@@ -1,8 +1,8 @@
 {
   "schema": "ysz-public-snapshot-v1",
-  "snapshot_date_local": "2026-10-26",
+  "snapshot_date_local": "2026-10-28",
   "timezone": "America/Los_Angeles",
-  "input_fingerprint": "2ff50af0faf88d48a946127f8e15a5c54119f73e42c9c503ee7d6bbb6924d696",
+  "input_fingerprint": "a4882b7482600f5fea4654c0d0e5a79cb79418defb9cc21bfdf75a1dab328822",
   "files": [
     {
       "source": "BUDGET_REPLAN.md",
@@ -1069,8 +1069,8 @@
     {
       "source": "formal12/scripts/formal12_rl.py",
       "published": "research/formal12/scripts/formal12_rl.py",
-      "source_sha256": "a206d4a71e33339a8877c851075478fd29235ab385d2beda9857a8cbeb683285",
-      "published_sha256": "a206d4a71e33339a8877c851075478fd29235ab385d2beda9857a8cbeb683285"
+      "source_sha256": "2bdc8863cc88a5e50507557d044822cc5ddc3634c8d86ee5fb3dab8b5463220f",
+      "published_sha256": "2bdc8863cc88a5e50507557d044822cc5ddc3634c8d86ee5fb3dab8b5463220f"
     },
     {
       "source": "formal12/scripts/formal12_search.py",
@@ -1135,8 +1135,32 @@
     {
       "source": "formal12/META_LOG.md",
       "published": "history/formal12/META_LOG.md",
-      "source_sha256": "478558ba9d4c45f5f55508e93b9feaa3b2eacd418cfa73b8b02dc39be86a0072",
-      "published_sha256": "478558ba9d4c45f5f55508e93b9feaa3b2eacd418cfa73b8b02dc39be86a0072"
+      "source_sha256": "e867fb3c3c8996c6b0691728e6da594f646fc327034a63c15040070f6bdeb987",
+      "published_sha256": "e867fb3c3c8996c6b0691728e6da594f646fc327034a63c15040070f6bdeb987"
+    },
+    {
+      "source": "formal12/scripts/formal12_imitate.py",
+      "published": "research/formal12/scripts/formal12_imitate.py",
+      "source_sha256": "472cab4c6a8e08d91eddb4aab5bb5074c630522c4001c20c68648052410bff0b",
+      "published_sha256": "472cab4c6a8e08d91eddb4aab5bb5074c630522c4001c20c68648052410bff0b"
+    },
+    {
+      "source": "formal12/scripts/formal12_replay.py",
+      "published": "research/formal12/scripts/formal12_replay.py",
+      "source_sha256": "13bfcd385cb97cb71affb1daf93d47599575ea4a29021f979245ec4ef566fdba",
+      "published_sha256": "13bfcd385cb97cb71affb1daf93d47599575ea4a29021f979245ec4ef566fdba"
+    },
+    {
+      "source": "rsi/RSI_LOG.md",
+      "published": "history/rsi/RSI_LOG.md",
+      "source_sha256": "bddf8a65ffcbe5e42a3c5e27d2ae605aa0c8b807433b35eab3c316e52f814f41",
+      "published_sha256": "c787e1886bde18b58b77836661557233544dbae53ba6f29f87ffbc38e123f42f"
+    },
+    {
+      "source": "rsi/RSI_YSZ_BUILD_PLAN.md",
+      "published": "history/rsi/RSI_YSZ_BUILD_PLAN.md",
+      "source_sha256": "b093f9248dfe6a6e4d085cefb0231f4e16f34578f69c817d137252cb980dae4e",
+      "published_sha256": "b093f9248dfe6a6e4d085cefb0231f4e16f34578f69c817d137252cb980dae4e"
     },
     {
       "source": "formal12/val_metric.py",
@@ -1167,6 +1191,20 @@
       "published": "experiments/results/diag_randomwalk_val24.json",
       "source_sha256": "a3b855022320548d240d6af2b1450bf166e45583bb489151a64f2bf336f875d7",
       "published_sha256": "92cd8f6a4846ec746f268b275a8239e30cb428d661fd982e09dc9786d15c8b79",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/grid_readout/out/result.json",
+      "published": "experiments/results/grid_readout.json",
+      "source_sha256": "8d29360919c96c887efa17c38337fe021ac9505d84d6a2bc00aca9eeec43cc36",
+      "published_sha256": "41bc8013f78e62d41e9693806ee8e8ac7ac334822c7ba72203fd607cf472c1c7",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/imit_greedy/out/result.json",
+      "published": "experiments/results/imit_greedy.json",
+      "source_sha256": "a3f78628cf7dc295c86b15a7107d26f8711e81eb0aa80870ae6dcbdd76bd1982",
+      "published_sha256": "9bfc89d4603242a60bea9445f938178d83823d146b0d86612d007e6054179935",
       "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
     },
     {
@@ -1289,6 +1327,13 @@
       "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
     },
     {
+      "source": "formal12/jobs/meta_s6_eval/out/result.json",
+      "published": "experiments/results/meta_s6_eval.json",
+      "source_sha256": "60531529f088f6c88bbecaee04d46bc43e664748a3807123efc7f456d7e2df7c",
+      "published_sha256": "ddff31db0c04d6922181705ada87a8d937e7497b758affb39ace29d6356022a9",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
       "source": "formal12/jobs/meta_s6_greedy/out/result.json",
       "published": "experiments/results/meta_s6_greedy.json",
       "source_sha256": "24405c800142075d7418a61c227e90de4675f0670c0c2ff086c4f413bf16c963",
@@ -1314,6 +1359,41 @@
       "published": "experiments/results/meta_s6a_train.json",
       "source_sha256": "3e1dd710d6b09c0be7abd94c5c01e3847004ca4a0ba41b35291b92eb25674abd",
       "published_sha256": "d0bd411a4833db2e8da36f9147d1c52e3c1c3d8159a9f5aa018dfe0a55c895b9",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/meta_s6b_train/out/result.json",
+      "published": "experiments/results/meta_s6b_train.json",
+      "source_sha256": "bc596b0bd287f2644f67338ff6f4776b203338ebbd5d8198f7aa4ac328b862ec",
+      "published_sha256": "5c6ad8aa3ed6fbe9fcfd043f940e60863c2fdd8760270f426651a476bae5dafc",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/rep_s2_greedy/out/result.json",
+      "published": "experiments/results/rep_s2_greedy.json",
+      "source_sha256": "d1ae1639ad6dccd2ee1de3293283ecae1f38b71fffe5ceb6255dce2b41be1d7a",
+      "published_sha256": "29de6f291e89f2fef39beb7110300c73f1f3069365139d7fce46a22b8403be9c",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/rep_s2_menurandom/out/result.json",
+      "published": "experiments/results/rep_s2_menurandom.json",
+      "source_sha256": "f8f76986724591aa585eeeafa0b7ed1b8fced538f9ce89331bcb2a329bfa3441",
+      "published_sha256": "d0e2b7e82b837843146362a1a976642184c308f57d6af29570202a50dd56c28c",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/rep_s3_greedy/out/result.json",
+      "published": "experiments/results/rep_s3_greedy.json",
+      "source_sha256": "5afdd680150549d7c715e2f98d68ef44671f0d61e151b5ef2c5bbf276a4d9bfb",
+      "published_sha256": "21e2d6b1fd9aa6687f8c82ae149cf9ee8b18d9bc16a231402045af08f0664324",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
+      "source": "formal12/jobs/rep_s3_menurandom/out/result.json",
+      "published": "experiments/results/rep_s3_menurandom.json",
+      "source_sha256": "e68f749adf12564b1312e2cdbf444c7040777f947cbb56ffe1c2113e02ff4ada",
+      "published_sha256": "16c43c1676fc9c8a5882bc791a22abfc9e5290bf72c259c623c2eb4e784c39f8",
       "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
     },
     {
@@ -1506,6 +1586,13 @@
       "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
     },
     {
+      "source": "formal12/jobs/step_readout/out/result.json",
+      "published": "experiments/results/step_readout.json",
+      "source_sha256": "d67ad9c611dde1dd90f671b4aaba085765f48df941104468cd8d7910ecb0ec05",
+      "published_sha256": "ba6aed0a798b21b40db36f2ed69f7acbe34bd6e15fd16ff962ba287096c29c35",
+      "transformation": "selected metadata, counters, and per-start energy drops; no weights or trajectories"
+    },
+    {
       "source": "formal12/jobs/tune_it_1e-4_e2_eval/out/result.json",
       "published": "experiments/results/tune_it_1e-4_e2_eval.json",
       "source_sha256": "cca31f37986d9c714bf7787e43abd62fa3199bbd82ee98a7234b593ca6464fa2",
@@ -1577,9 +1664,9 @@
     }
   ],
   "ledger_source_sha256": {
-    "training_smoke/FORMAL_TRAINING_POOL.json": "1b0ef5aaca329bafccedf011a8ba03fa9e6c2915715408221e6243ae24ec5867",
-    "training_smoke/FORMAL_DFT_DIAG.json": "783390cc31c4314d58dfb05e6170b2f05cbda3ee744b70b067c8f7b513e4a6f8",
-    "training_smoke/FORMAL_MD_POOL.json": "f873c397938f237a99ca1c510c7ee1e5f346b6601bea6ed2b41c41044f87ca22",
+    "training_smoke/FORMAL_TRAINING_POOL.json": "f492cef94502a257a2b9d2ada0de191ff2d4873fb9bf8f5fa73c8043a276e8eb",
+    "training_smoke/FORMAL_DFT_DIAG.json": "651455e445e9bdcb70a95d96f88de3d07993959b7791faed9f86b42fc7f1af41",
+    "training_smoke/FORMAL_MD_POOL.json": "ceb40926b9767599550c5e24db0e28252b35eb6d102ff8d3d8a85c98ecd16f06",
     "training_smoke/BUDGET.json": "a08d0aa29ea05caa493fc1d8155a8e1f4ae6e298eacfb6c432b3963b4e0d0fec"
   },
   "redactions": [

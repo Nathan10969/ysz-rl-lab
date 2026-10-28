@@ -1,0 +1,142 @@
+{
+  "job": "grid_readout",
+  "schema": "formal12-imitate-v1",
+  "status": "COMPLETED",
+  "counters": {
+    "attempts": 0,
+    "cache_hits": 0,
+    "forward_calls": 0,
+    "generated_tokens": 0,
+    "near_threshold_novelty_events": 0,
+    "novelty_events": 0,
+    "physical_action_attempts": 0,
+    "prefill_tokens": 6669280,
+    "raw_ef": 0,
+    "relax_actual": 0,
+    "seen_tokens": 6669280,
+    "unmappable_terminals": 0
+  },
+  "wall_seconds": 192.22534828446805,
+  "menu_preference": {
+    "grid_lr1em4_u1": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.40553453351646096,
+        "argmax_accuracy": 0.2692307692307692,
+        "optimal_mass": 0.2393571386955579,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.08510139486223849,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr1em4_u2": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.022737451305698868,
+        "argmax_accuracy": 0.08173076923076923,
+        "optimal_mass": 0.08739708357254851,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.10293360392336334,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr2em5_u1": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.025142308332614004,
+        "argmax_accuracy": 0.13942307692307693,
+        "optimal_mass": 0.09007241734096033,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.1068658343543453,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr2em5_u2": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.032231219704168555,
+        "argmax_accuracy": 0.125,
+        "optimal_mass": 0.0906545479800083,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.10473289477983692,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr3em4_u1": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.2636436824868283,
+        "argmax_accuracy": 0.14903846153846154,
+        "optimal_mass": 0.14573470383866,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.03615668357078597,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr3em4_u2": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.39408078802874213,
+        "argmax_accuracy": 0.2644230769230769,
+        "optimal_mass": 0.23736732711775896,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.14621515885047126,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr5em5_u1": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.10714366525019994,
+        "argmax_accuracy": 0.14903846153846154,
+        "optimal_mass": 0.11187119691716137,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.10906503219027412,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "grid_lr5em5_u2": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.02379868197876884,
+        "argmax_accuracy": 0.09134615384615384,
+        "optimal_mass": 0.08951543892228825,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.1080916550485827,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "meta_s6_sft": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.021653713631305655,
+        "argmax_accuracy": 0.10096153846153846,
+        "optimal_mass": 0.08976851302668956,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.10897178543465856,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    },
+    "step_a": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.02157675006776828,
+        "argmax_accuracy": 0.14423076923076922,
+        "optimal_mass": 0.09003908422366252,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.10876996045620303,
+        "menu_min_dNN": -0.9807692307692307
+      }
+    }
+  },
+  "diagnostic_data": {
+    "train_rows": 0,
+    "test_rows": 208,
+    "train_fit_rows": 0,
+    "mean_optimal_set_size": 1.3846153846153846
+  },
+  "diagnostic_scope": "Menu preference on development data; C is a frozen-heuristic score capture, not physical energy improvement or a held-out final test.",
+  "per_start": [],
+  "mean_best_of_4_drop_eV": null,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

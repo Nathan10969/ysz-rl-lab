@@ -11,7 +11,7 @@
 | 局部特征贪心 | 2.561 ± 0.170 | 24 | 候选菜单，非 LLM |
 | 同菜单随机 | 1.835 ± 0.196 | 24 | 候选菜单，主要随机对照 |
 | SFT v4 | 1.804 ± 0.194 | 24 | 候选菜单 |
-| GRPO v4 | 尚无完整本地结果 | — | 候选菜单 |
+| GRPO v4 | 1.851 ± 0.168 | 24 | 候选菜单 |
 
 ## 配对比较
 
@@ -25,12 +25,36 @@
 | meta_s6_greedy − meta_s6_menurandom | +0.726 | 0.140 | 达到 |
 | meta_s6_sft_eval − meta_s6_menurandom | -0.031 | 0.111 | 未达到 |
 | meta_s6_sft_eval − meta_s6_greedy | -0.757 | 0.156 | 未达到 |
+| meta_s6_eval − meta_s6_menurandom | +0.016 | 0.125 | 未达到 |
+| meta_s6_eval − meta_s6_greedy | -0.710 | 0.127 | 未达到 |
+| rep_s2_greedy − rep_s2_menurandom | +0.796 | 0.155 | 达到 |
+| rep_s3_greedy − rep_s3_menurandom | +1.014 | 0.118 | 达到 |
+
+## 逐步 GRPO 的开发菜单读数
+
+| 配置 | 学习率 | 每轮更新次数 | C |
+|---|---:|---:|---:|
+| SFT v4 | — | — | 0.0217 |
+| 985（原配方） | 2e-5 | 8 | 0.0216 |
+| 988（原配方重复） | 2e-5 | 8 | 0.0322 |
+| 989 | 2e-5 | 16 | 0.0251 |
+| 990 | 5e-5 | 8 | 0.0238 |
+| 991 | 5e-5 | 16 | 0.1071 |
+| 992 | 1e-4 | 8 | 0.0227 |
+| 993 | 1e-4 | 16 | 0.4055 |
+| 994 | 3e-4 | 8 | 0.3941 |
+| 995 | 3e-4 | 16 | 0.2636 |
+
+原配方重复差为 0.010654，探索门槛为 0.05；最高配置相对原配方提高 0.383958，达到预登记的可区分门槛。
+这是开发集选参规则，不是显著性检验。C 是贪心分数优势的捕获比例，不是能量或正确率。
+完整定义与解释见 [网格更新](menu-grid-2026-10-28.md)，机器可读复算见 [摘要](../../experiments/diagnostics/menu_grid_summary.json)。
 
 ## 当前判断
 
-- 两参数特征贪心在当前验证池上优于旧表示的模型和随机选择器。
-- 菜单 SFT 没有达到同时超越随机和贪心的门槛。
-- 菜单 GRPO 的状态、是否通过两个对照，以本页表格与保存结果为准；未独立确认前不写成最终结论。
+- 两参数特征贪心在种子 2/3 的已保存评估中也优于同菜单随机，比较仍限于 MACE。
+- 菜单 v4 的已测 SFT 与回合级 GRPO 没有达到同时超越随机和贪心的门槛。
+- 逐步 GRPO 网格改变了贪心偏好读数；物理搜索收益需以后续完成的物理评估判断。
+- 旧表示与菜单随机的比较是事后跨动作接口比较，应与 v4 的同菜单对照区分。
 - 当前验证池被反复用于选择方案，后续确认应使用未参与选择的起点和多个种子。
 
 ## 全部已保存作业
@@ -40,6 +64,8 @@
 | 作业 | 阶段 | 状态 | 起点数 | 平均降能（eV） |
 |---|---|---|---:|---:|
 | [diag_randomwalk_val24](../../experiments/results/diag_randomwalk_val24.json) | search | COMPLETED | 24 | 1.627255 |
+| [grid_readout](../../experiments/results/grid_readout.json) | — | COMPLETED | 0 | — |
+| [imit_greedy](../../experiments/results/imit_greedy.json) | — | COMPLETED | 0 | — |
 | [meta_s0_eval](../../experiments/results/meta_s0_eval.json) | blind | COMPLETED | 8 | 1.558126 |
 | [meta_s0b_eval](../../experiments/results/meta_s0b_eval.json) | blind | COMPLETED | 24 | 1.714231 |
 | [meta_s1_eval](../../experiments/results/meta_s1_eval.json) | blind | COMPLETED | 8 | 1.571968 |
@@ -57,10 +83,16 @@
 | [meta_s5_sft_eval](../../experiments/results/meta_s5_sft_eval.json) | blind | COMPLETED | 24 | 1.789514 |
 | [meta_s5a_train](../../experiments/results/meta_s5a_train.json) | round | COMPLETED | 16 | 1.790604 |
 | [meta_s5b_train](../../experiments/results/meta_s5b_train.json) | round | COMPLETED | 16 | 2.110683 |
+| [meta_s6_eval](../../experiments/results/meta_s6_eval.json) | blind | COMPLETED | 24 | 1.851380 |
 | [meta_s6_greedy](../../experiments/results/meta_s6_greedy.json) | blind | COMPLETED | 24 | 2.561023 |
 | [meta_s6_menurandom](../../experiments/results/meta_s6_menurandom.json) | blind | COMPLETED | 24 | 1.835134 |
 | [meta_s6_sft_eval](../../experiments/results/meta_s6_sft_eval.json) | blind | COMPLETED | 24 | 1.804234 |
 | [meta_s6a_train](../../experiments/results/meta_s6a_train.json) | round | COMPLETED | 16 | 1.741265 |
+| [meta_s6b_train](../../experiments/results/meta_s6b_train.json) | round | COMPLETED | 16 | 1.522287 |
+| [rep_s2_greedy](../../experiments/results/rep_s2_greedy.json) | blind | COMPLETED | 24 | 2.741522 |
+| [rep_s2_menurandom](../../experiments/results/rep_s2_menurandom.json) | blind | COMPLETED | 24 | 1.945830 |
+| [rep_s3_greedy](../../experiments/results/rep_s3_greedy.json) | blind | COMPLETED | 24 | 3.033448 |
+| [rep_s3_menurandom](../../experiments/results/rep_s3_menurandom.json) | blind | COMPLETED | 24 | 2.019791 |
 | [s1_d0sft](../../experiments/results/s1_d0sft.json) | d0sft | COMPLETED | 52 | 1.221527 |
 | [s1_frozen_blind](../../experiments/results/s1_frozen_blind.json) | blind | COMPLETED | 2 | 1.755017 |
 | [s1_frozen_r1](../../experiments/results/s1_frozen_r1.json) | round | COMPLETED | 16 | 1.867463 |
@@ -88,6 +120,7 @@
 | [s2_itersft_r2](../../experiments/results/s2_itersft_r2.json) | round | COMPLETED | 16 | 1.619935 |
 | [s2_search_r0](../../experiments/results/s2_search_r0.json) | search | COMPLETED | 52 | 1.493951 |
 | [s2_search_r1](../../experiments/results/s2_search_r1.json) | search | COMPLETED | 16 | 1.931257 |
+| [step_readout](../../experiments/results/step_readout.json) | — | COMPLETED | 0 | — |
 | [tune_it_1e-4_e2_eval](../../experiments/results/tune_it_1e-4_e2_eval.json) | blind | COMPLETED | 8 | 1.281687 |
 | [tune_it_1e-4_e4_eval](../../experiments/results/tune_it_1e-4_e4_eval.json) | blind | COMPLETED | 8 | 1.514357 |
 | [tune_it_2e-4_e2_eval](../../experiments/results/tune_it_2e-4_e2_eval.json) | blind | COMPLETED | 8 | 1.688534 |

@@ -20,6 +20,8 @@ git diff --stat
 
 只使用明确列在 `tools/publication_sources.json` 中的原始文件。模型、虚拟环境、凭据和消息库不会因新增文件自动进入白名单。结果摘要通过字段级导出。
 
+菜单偏好读数单独保留在结果摘要的 `menu_preference` 字段，由 `results.py --write` 复算选参门槛并生成 `experiments/diagnostics/menu_grid_summary.json`。C 不混入能量排名。账本表头不一致时保留原值并输出 `header_totals_consistent=false`，不能把报告总额当作已结算费用。
+
 `publish_snapshot.py` 只要输入没有变化就保持文件不变，不会靠修改时间戳制造日更。一天多次同步会追加记录，不删除已经写下的观察。
 
 ## 失败和等待

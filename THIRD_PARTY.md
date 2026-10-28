@@ -11,6 +11,7 @@
 | PyTorch、Transformers、PEFT | 张量、模型加载、LoRA 训练 | [PyTorch](https://pytorch.org/) · [Transformers](https://github.com/huggingface/transformers) · [PEFT](https://github.com/huggingface/peft) |
 | VASP | DFT 校准与验证 | [VASP](https://www.vasp.at/) |
 | DeepSeekMath / GRPO | 组内相对策略优化的方法来源 | [原论文](https://arxiv.org/abs/2402.03300) |
+| Dong、Qi、Li、Chen，Acta Materialia 127 (2017), 73–84 | 相关前作：用局部配位偏好引导 8YSZ 低能构型搜索，帮助界定本项目贡献；未打包论文全文 | [原论文](https://arxiv.org/abs/1701.05089) |
 
 公开仓库包含本项目的调用、控制、测试与分析代码，不包含外部模型权重、训练 adapter、VASP 二进制／赝势、论文 PDF 或整份第三方源码。源工作区中的 MACE 上游补丁及缓存也没有直接打包。
 

@@ -77,3 +77,5 @@
 - [archive/review09_before_review10/TRAINING_ENV_SPEC.md](archive/review09_before_review10/TRAINING_ENV_SPEC.md)
 - [archive/review09_before_review10/TRAINING_PROBE_PLAN.md](archive/review09_before_review10/TRAINING_PROBE_PLAN.md)
 - [formal12/META_LOG.md](formal12/META_LOG.md)
+- [rsi/RSI_LOG.md](rsi/RSI_LOG.md)
+- [rsi/RSI_YSZ_BUILD_PLAN.md](rsi/RSI_YSZ_BUILD_PLAN.md)

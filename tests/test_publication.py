@@ -10,12 +10,38 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-from publish_snapshot import clean, compact_result
+from publish_snapshot import clean, compact_result, budget_summary
 import publish_snapshot
+import results
 from results import load, paired
 
 
 class ExportIntegrity(unittest.TestCase):
+    def test_menu_diagnostics_keep_metrics_without_private_model_inputs(self):
+        item = compact_result('grid_readout', {
+            'schema': 'formal12-imitate-v1', 'status': 'COMPLETED',
+            'data': {'test_rows': 208, 'target_histogram': [0] * 16},
+            'eval': {'candidate': {'test': {'n': 208, 'captured_fraction': .4,
+                'optimal_mass': .24, 'chance_mass': .087, 'argmax_accuracy': .27,
+                'messages': 'private prompts'}}},
+            'inputs': {'model': 'private model location'}})
+        self.assertEqual(item['menu_preference']['candidate']['test']['captured_fraction'], .4)
+        self.assertEqual(item['diagnostic_data']['test_rows'], 208)
+        self.assertIsNone(item['mean_best_of_4_drop_eV'])
+        self.assertNotIn('private', json.dumps(item))
+
+    def test_inconsistent_ledger_is_flagged_without_overwriting_reported_values(self):
+        with tempfile.TemporaryDirectory() as temp:
+            source = Path(temp)
+            (source / 'training_smoke').mkdir()
+            (source / 'training_smoke/FORMAL_TRAINING_POOL.json').write_text(json.dumps({
+                'actual_card_hours': 3., 'reserved_card_hours': 2., 'actual_plus_reserved': 7.}))
+            budgets, _ = budget_summary(source)
+            item = budgets['FORMAL_TRAINING_POOL.json']
+            self.assertEqual(item['actual_plus_reserved'], 7.)
+            self.assertEqual(item['header_sum_card_hours'], 5.)
+            self.assertFalse(item['header_totals_consistent'])
+
     def test_timestamp_only_refresh_is_noop_and_secret_failure_preserves_public_files(self):
         with tempfile.TemporaryDirectory() as temp:
             base = Path(temp)
@@ -104,6 +130,22 @@ class PairedEvidence(unittest.TestCase):
         other_pool["config"]["pool"] = "another_pool"
         with self.assertRaisesRegex(ValueError, "Different start pools"):
             paired(self.candidate, other_pool)
+
+
+class MenuGridEvidence(unittest.TestCase):
+    def test_grid_selection_replays_the_recorded_rule_without_calling_it_a_significance_test(self):
+        record = {'status': 'COMPLETED', 'diagnostic_data': {'test_rows': 208},
+                  'menu_preference': {name: {'test': {'n': 208, 'captured_fraction': c}}
+                     for name, c in [('step_a', .02), ('grid_lr2em5_u2', .03),
+                                     ('grid_lr1em4_u1', .4)]}}
+        with patch.object(results, 'load', return_value=record):
+            summary = results.menu_grid_summary()
+        self.assertEqual(summary['selected_adapter'], 'grid_lr1em4_u1')
+        self.assertAlmostEqual(summary['observed_repeat_difference'], .01)
+        self.assertAlmostEqual(summary['exploratory_threshold'], .05)
+        self.assertTrue(summary['exploratory_rule_pass'])
+        self.assertEqual(summary['data_role'], 'development')
+        self.assertFalse(summary['formal_significance_test'])
 
 
 if __name__ == "__main__":

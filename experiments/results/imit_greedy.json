@@ -1,0 +1,72 @@
+{
+  "job": "imit_greedy",
+  "schema": "formal12-imitate-v1",
+  "status": "COMPLETED",
+  "counters": {
+    "attempts": 0,
+    "cache_hits": 0,
+    "forward_calls": 0,
+    "generated_tokens": 0,
+    "near_threshold_novelty_events": 0,
+    "novelty_events": 0,
+    "physical_action_attempts": 0,
+    "prefill_tokens": 5748613,
+    "raw_ef": 0,
+    "relax_actual": 0,
+    "seen_tokens": 5748613,
+    "unmappable_terminals": 0
+  },
+  "wall_seconds": 360.39099412597716,
+  "menu_preference": {
+    "greedy_sft": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.9683888128448094,
+        "argmax_accuracy": 0.9471153846153846,
+        "optimal_mass": 0.9108948433243231,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": -0.6153819808443832,
+        "menu_min_dNN": -0.9807692307692307
+      },
+      "train_fit": {
+        "n": 64,
+        "captured_fraction": 0.9871341431082257,
+        "argmax_accuracy": 0.984375,
+        "optimal_mass": 0.9620850351958998,
+        "chance_mass": 0.0849609375,
+        "expected_dNN": -0.6293633758032809,
+        "menu_min_dNN": -1.03125
+      }
+    },
+    "meta_s6_sft": {
+      "test": {
+        "n": 208,
+        "captured_fraction": 0.021653713631305655,
+        "argmax_accuracy": 0.10096153846153846,
+        "optimal_mass": 0.08976851302668956,
+        "chance_mass": 0.08653846153846154,
+        "expected_dNN": 0.10897178543465856,
+        "menu_min_dNN": -0.9807692307692307
+      },
+      "train_fit": {
+        "n": 64,
+        "captured_fraction": 0.017153545888459555,
+        "argmax_accuracy": 0.140625,
+        "optimal_mass": 0.09180183663440497,
+        "chance_mass": 0.0849609375,
+        "expected_dNN": 0.08708356934028423,
+        "menu_min_dNN": -1.03125
+      }
+    }
+  },
+  "diagnostic_data": {
+    "train_rows": 828,
+    "test_rows": 208,
+    "train_fit_rows": 64,
+    "mean_optimal_set_size": 1.3846153846153846
+  },
+  "diagnostic_scope": "Menu preference on development data; C is a frozen-heuristic score capture, not physical energy improvement or a held-out final test.",
+  "per_start": [],
+  "mean_best_of_4_drop_eV": null,
+  "scope": "Derived from saved results. MACE eV per supercell; not final DFT validation."
+}

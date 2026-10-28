@@ -17,6 +17,18 @@ BENCHMARKS = (
     ("meta_s6_sft_eval", "SFT v4", "候选菜单"),
     ("meta_s6_eval", "GRPO v4", "候选菜单"),
 )
+MENU_GRID = (
+    ("meta_s6_sft", "SFT v4", "—", "—"),
+    ("step_a", "985（原配方）", "2e-5", 8),
+    ("grid_lr2em5_u2", "988（原配方重复）", "2e-5", 8),
+    ("grid_lr2em5_u1", "989", "2e-5", 16),
+    ("grid_lr5em5_u2", "990", "5e-5", 8),
+    ("grid_lr5em5_u1", "991", "5e-5", 16),
+    ("grid_lr1em4_u2", "992", "1e-4", 8),
+    ("grid_lr1em4_u1", "993", "1e-4", 16),
+    ("grid_lr3em4_u2", "994", "3e-4", 8),
+    ("grid_lr3em4_u1", "995", "3e-4", 16),
+)
 
 
 def load(name: str) -> dict:
@@ -87,6 +99,35 @@ def benchmark_table() -> str:
     return "\n".join(lines)
 
 
+def menu_grid_summary() -> dict:
+    record = load("grid_readout")
+    if record.get("status") != "COMPLETED":
+        raise ValueError("Menu grid readout is not complete")
+    metrics = {name: splits["test"] for name, splits in record["menu_preference"].items()}
+    baseline = metrics["step_a"]["captured_fraction"]
+    repeat_difference = abs(metrics["grid_lr2em5_u2"]["captured_fraction"] - baseline)
+    candidates = {name: m for name, m in metrics.items() if name.startswith("grid_lr")}
+    selected = max(candidates, key=lambda name: candidates[name]["captured_fraction"])
+    threshold = max(.05, 2 * repeat_difference)
+    improvement = candidates[selected]["captured_fraction"] - baseline
+    return {"schema": "ysz-menu-grid-summary-v1", "source": "experiments/results/grid_readout.json",
+            "data_role": "development", "n_menus": record["diagnostic_data"]["test_rows"],
+            "rows": metrics, "selected_adapter": selected,
+            "observed_repeat_difference": repeat_difference,
+            "exploratory_threshold": threshold, "selected_C_improvement": improvement,
+            "exploratory_rule_pass": improvement >= threshold, "formal_significance_test": False,
+            "interpretation": "Replay of the recorded development-selection rule. One repeat pair is not "
+                "a variance estimate; selected configurations need independent physical evaluation."}
+
+
+def menu_grid_table(summary: dict) -> str:
+    lines = ["| 配置 | 学习率 | 每轮更新次数 | C |", "|---|---:|---:|---:|"]
+    for name, label, lr, updates in MENU_GRID:
+        if name in summary["rows"]:
+            lines.append(f"| {label} | {lr} | {updates} | {summary['rows'][name]['captured_fraction']:.4f} |")
+    return "\n".join(lines)
+
+
 def write_reports():
     table = benchmark_table()
     readme = ROOT / "README.md"
@@ -94,7 +135,20 @@ def write_reports():
     begin, end = "<!-- RESULTS:START -->", "<!-- RESULTS:END -->"
     before, remainder = text.split(begin, 1)
     _, after = remainder.split(end, 1)
-    readme.write_text(before + begin + "\n" + table + "\n" + end + after)
+    updated_readme = before + begin + "\n" + table + "\n" + end + after
+    grid = None
+    if (ROOT / "experiments/results/grid_readout.json").exists():
+        grid = menu_grid_summary()
+        diagnostic_dir = ROOT / "experiments/diagnostics"
+        diagnostic_dir.mkdir(exist_ok=True)
+        (diagnostic_dir / "menu_grid_summary.json").write_text(
+            json.dumps(grid, ensure_ascii=False, indent=2, allow_nan=False) + "\n")
+        grid_begin, grid_end = "<!-- MENU_GRID:START -->", "<!-- MENU_GRID:END -->"
+        if grid_begin in updated_readme:
+            prefix, rest = updated_readme.split(grid_begin, 1)
+            _, suffix = rest.split(grid_end, 1)
+            updated_readme = prefix + grid_begin + "\n" + menu_grid_table(grid) + "\n" + grid_end + suffix
+    readme.write_text(updated_readme)
     lines = ["# 保存结果看板", "", "由 `python tools/results.py --write` 从公开的逐起点摘要生成。",
              "单位：MACE eV／316 原子超胞；每个起点取四条轨迹中的最好降幅，再求平均。± 为起点重采样标准误差。",
              "这是已保存结果的复算，不会调用模型或提交作业。", "", table, "", "## 配对比较", "",
@@ -104,7 +158,9 @@ def write_reports():
     for candidate, reference in (("meta_s3_eval", "meta_s0b_eval"), ("meta_s3_eval", "meta_s6_menurandom"),
                                   ("meta_s6_greedy", "meta_s6_menurandom"), ("meta_s6_sft_eval", "meta_s6_menurandom"),
                                   ("meta_s6_sft_eval", "meta_s6_greedy"), ("meta_s6_eval", "meta_s6_menurandom"),
-                                  ("meta_s6_eval", "meta_s6_greedy")):
+                                  ("meta_s6_eval", "meta_s6_greedy"),
+                                  ("rep_s2_greedy", "rep_s2_menurandom"),
+                                  ("rep_s3_greedy", "rep_s3_menurandom")):
         try:
             comparison = paired(load(candidate), load(reference))
         except FileNotFoundError:
@@ -113,9 +169,17 @@ def write_reports():
             continue
         mark = "达到" if comparison["exploratory_rule_pass"] else "未达到"
         lines.append(f"| {candidate} − {reference} | {comparison['mean_improvement_eV']:+.3f} | {comparison['paired_se_eV']:.3f} | {mark} |")
-    lines += ["", "## 当前判断", "", "- 两参数特征贪心在当前验证池上优于旧表示的模型和随机选择器。",
-              "- 菜单 SFT 没有达到同时超越随机和贪心的门槛。",
-              "- 菜单 GRPO 的状态、是否通过两个对照，以本页表格与保存结果为准；未独立确认前不写成最终结论。",
+    if grid:
+        lines += ["", "## 逐步 GRPO 的开发菜单读数", "", menu_grid_table(grid), "",
+                  f"原配方重复差为 {grid['observed_repeat_difference']:.6f}，探索门槛为 {grid['exploratory_threshold']:.2f}；"
+                  f"最高配置相对原配方提高 {grid['selected_C_improvement']:.6f}，达到预登记的可区分门槛。",
+                  "这是开发集选参规则，不是显著性检验。C 是贪心分数优势的捕获比例，不是能量或正确率。",
+                  "完整定义与解释见 [网格更新](menu-grid-2026-10-28.md)，机器可读复算见 "
+                  "[摘要](../../experiments/diagnostics/menu_grid_summary.json)。"]
+    lines += ["", "## 当前判断", "", "- 两参数特征贪心在种子 2/3 的已保存评估中也优于同菜单随机，比较仍限于 MACE。",
+              "- 菜单 v4 的已测 SFT 与回合级 GRPO 没有达到同时超越随机和贪心的门槛。",
+              "- 逐步 GRPO 网格改变了贪心偏好读数；物理搜索收益需以后续完成的物理评估判断。",
+              "- 旧表示与菜单随机的比较是事后跨动作接口比较，应与 v4 的同菜单对照区分。",
               "- 当前验证池被反复用于选择方案，后续确认应使用未参与选择的起点和多个种子。", "",
               "## 全部已保存作业", "", "这一索引包含采集、训练、rollout 和验证等不同阶段；不能把训练中的收益当独立测试表现。", "",
               "| 作业 | 阶段 | 状态 | 起点数 | 平均降能（eV） |", "|---|---|---|---:|---:|"]

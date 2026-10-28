@@ -10,3 +10,4 @@
 - No new file enters the snapshot allowlist without review. Do not bypass a failed publication check.
 - On failure or a block needing user input, remove the corresponding daily automation as requested by the user; preserve the error and local changes for recovery.
 - No empty status messages or empty commits when the monitored state has not changed.
+- User instruction (2026-10-27): this project and its RSI discussion do not use AgentLink, including sends, inbox reads, replies, listeners and polling. CC communication is relayed by the user.

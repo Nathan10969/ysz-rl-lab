@@ -124,6 +124,12 @@ def make_env(terminal, ledger, cache, namespace, frozen_history, seed):
 # ----------------------------------------------------------------------------- LLM rollouts
 
 MENU = False                           # Review12.3 step 6: --prompt v4 (candidate menu); set in main()
+REPLAY = None                          # 2026-10-27: formal12_replay.ReplayLog for GRPO training jobs; set in job_llm()
+
+
+def _note(actor, action, **fields):
+    if REPLAY is not None:
+        REPLAY.note(action, sampling=actor.records[-1] if getattr(actor, 'records', None) else {}, **fields)
 
 
 class Carrier:
@@ -141,6 +147,7 @@ def choose(actor, environment, ledger, *, seed, lane, step, group_id, score_refe
         if score_reference:
             with Phase(ledger, 'reference_scoring'):
                 action = actor.score_reference(action, ledger)
+        _note(actor, action, messages=messages, env_text=action.text, menu=None, choice=None, group=group_id, step=step, lane=lane)
         return action.text, action, messages, {}
     from formal12_menu import make_menu, encode_prompt_v4, greedy_choice
     menu = make_menu(state.occupancy, (seed, state.terminal_key, state.steps_taken))
@@ -159,6 +166,8 @@ def choose(actor, environment, ledger, *, seed, lane, step, group_id, score_refe
         with Phase(ledger, 'reference_scoring'):
             action = actor.score_reference(action, ledger)
     picked = menu[json.loads(action.text)['choice']]
+    _note(actor, action, messages=messages, env_text=picked['action'].to_json(), menu=menu, choice=picked['k'],
+          group=group_id, step=step, lane=lane)
     return picked['action'].to_json(), action, messages, dict(choice=picked['k'], dNN=picked['dNN'],
                                                               min_dNN=min(m['dNN'] for m in menu))
 
@@ -233,8 +242,13 @@ def run_llm_round(arm, actor, engine, starts, ledger, *, seed, round_index, hist
         if train and (group_id + 1) % update_every == 0:
             returns_arr = np.array(pending_returns, dtype=float)
             if returns_arr.ndim == 1: returns_arr = returns_arr.reshape(-1, GROUP_SIZE)
+            if REPLAY is not None:   # persisted before the step that consumes it
+                with Phase(ledger, 'replay_write', after_group=group_id):
+                    REPLAY.write_batch(pending_episodes, returns_arr.tolist(), policy_hash=actor._policy_hash(),
+                                       reference_hash=actor._reference_hash(), initial_policy_hash=actor.initial_policy_hash)
             with Phase(ledger, 'policy_update', after_group=group_id):
                 updates.append(actor.update(pending_episodes, returns_arr.tolist(), ledger))
+            if REPLAY is not None: REPLAY.record_update(updates[-1])
             pending_episodes, pending_returns = [], []
     sft = None
     if arm == 'itersft' and not blind:
@@ -262,25 +276,32 @@ def step_group(actor, start, ledger, cache, namespace, novelty, execute, rng, *,
             environment.state.best_energy = best
             environment.state.history = list(history_entries)
             environment.state.steps_taken = step
-        actions = []
-        for environment in environments:
+        # 2026-10-27: through choose(), so --prompt v4 branches pick from the state's menu (all four branches share
+        # one menu: same state and step) and the environment gets the canonical action text, not {"choice":k}.
+        carriers, actions, extras = [], [], []
+        for lane, environment in enumerate(environments):
             ledger.check()
-            messages = ENCODE(environment.state)
-            with Phase(ledger, 'generation', group=group_id, step=step):
-                action = actor.generate(messages, ledger, phase='rollout', occupancy=environment.state.occupancy)
-            with Phase(ledger, 'reference_scoring'):
-                actions.append(actor.score_reference(action, ledger))
-        outcomes, failure = _StepBarrier(environments, ledger, execute).run(actions)
+            text, action, _, extra = choose(actor, environment, ledger, seed=seed, lane=lane, step=step,
+                                            group_id=group_id, score_reference=True)
+            carriers.append(Carrier(text)); actions.append(action); extras.append(extra)
+        outcomes, failure = _StepBarrier(environments, ledger, execute).run(carriers)
         if failure is not None: raise failure
-        rewards = []
+        rewards, components = [], []
         for environment, outcome in zip(environments, outcomes):
             if outcome is None or outcome.status == 'physical_failure': raise RuntimeError('Physical failure')
             immediate = (current.result.energy - environment.state.energy) / .20 if outcome.success else 0.
             rewards.append(immediate + outcome.novelty_reward + (outcome.reward if outcome.status == 'illegal' else 0.))
+            components.append(dict(lane=len(components), status=outcome.status, success=bool(outcome.success),
+                                   immediate=float(immediate), novelty=float(outcome.novelty_reward),
+                                   illegal=float(outcome.reward) if outcome.status == 'illegal' else 0., total=float(rewards[-1]),
+                                   energy_before_eV=float(current.result.energy), energy_after_eV=float(environment.state.energy)))
+        if REPLAY is not None: REPLAY.note_outcomes(group=group_id, step=step, branches=components)
         choice = int(rng.integers(GROUP_SIZE))
         chosen = environments[choice]
-        row = dict(group=group_id, step=step, texts=[a.text for a in actions], rewards=rewards,
-                   statuses=[o.status for o in outcomes], energies=[e.state.energy for e in environments], choice=choice)
+        row = dict(group=group_id, step=step, texts=[c.text for c in carriers], rewards=rewards,
+                   statuses=[o.status for o in outcomes], energies=[e.state.energy for e in environments], choice=choice,
+                   **({'menu_choices': [x['choice'] for x in extras], 'menu_dNN': [x['dNN'] for x in extras],
+                       'menu_min_dNN': extras[0]['min_dNN']} if MENU else {}))
         steps.append(row); append_jsonl(journal, row)
         episodes.extend([a.sample()] for a in actions); returns.append(rewards)
         visits.update(e.state.terminal_key for e in environments)
@@ -345,6 +366,13 @@ def job_llm(args, ledger, out):
     history = load_history(args.history)
     prior_rows = []
     for path in args.prior_rows: prior_rows.extend(json.loads(Path(path).read_text()))
+    global REPLAY
+    if not blind and args.arm in ('grpo_traj', 'grpo_step'):
+        from formal12_replay import ReplayLog
+        REPLAY = ReplayLog(out / 'replay', job=dict(arm=args.arm, seed=args.seed, stage=args.stage, round=args.round,
+                                                    pool=args.pool, policy_adapter=str(args.policy_adapter),
+                                                    reference_adapter=str(args.reference_adapter),
+                                                    policy_adapter_hashes=actor.policy_hashes_at_load))
     if args.prompt == 'v3':
         from formal12_prompt import to_v3
         prior_rows = [dict(r, messages=to_v3(r['messages'])) if 'local' not in r['messages'][1]['content'] else r
@@ -352,6 +380,7 @@ def job_llm(args, ledger, out):
     result = run_llm_round(args.arm, actor, engine, starts, ledger, seed=args.seed, round_index=args.round,
                            history=history, output=out, prior_rows=prior_rows, blind=blind, spares=pools.get('spare', ()),
                            update_every=args.update_every, itersft_epochs=args.itersft_epochs)
+    if REPLAY is not None: result['replay'] = REPLAY.close()
     from smoke_grpo11 import summarize
     result['constrained_diagnostics'] = summarize(actor.records)
     result['load_corrections'] = actor.load_corrections

@@ -2,10 +2,10 @@
   "FORMAL_TRAINING_POOL.json": {
     "schema": "formal12-pool-v1",
     "authorized_card_hours": 90,
-    "actual_card_hours": 32.82000000000001,
-    "reserved_card_hours": 1.5,
-    "actual_plus_reserved": 34.32000000000001,
-    "updated_at_utc": "2026-10-27T06:02:12.214055+00:00",
+    "actual_card_hours": 37.30527777777779,
+    "reserved_card_hours": 7.22,
+    "actual_plus_reserved": 49.13527777777779,
+    "updated_at_utc": "2026-10-28T07:14:45.599228+00:00",
     "jobs": [
       {
         "name": "s1_d0sft",
@@ -1810,18 +1810,199 @@
       {
         "name": "meta_s6_eval",
         "slurm_job_id": "979",
-        "state": "RUNNING",
-        "elapsed_seconds": 19,
+        "state": "COMPLETED",
+        "elapsed_seconds": 2551,
+        "actual_card_hours": 0.7086111111111111,
         "hard_card_hours": 1.5
+      },
+      {
+        "name": "rep_s2_greedy",
+        "slurm_job_id": "980",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2174,
+        "actual_card_hours": 0.6038888888888889,
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "rep_s2_menurandom",
+        "slurm_job_id": "981",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2253,
+        "actual_card_hours": 0.6258333333333334,
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "rep_s3_greedy",
+        "slurm_job_id": "982",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2204,
+        "actual_card_hours": 0.6122222222222222,
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "rep_s3_menurandom",
+        "slurm_job_id": "983",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2359,
+        "actual_card_hours": 0.6552777777777777,
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "imit_greedy",
+        "slurm_job_id": "984",
+        "state": "COMPLETED",
+        "elapsed_seconds": 366,
+        "actual_card_hours": 0.10166666666666667,
+        "hard_card_hours": 0.5
+      },
+      {
+        "name": "step_a",
+        "slurm_job_id": "985",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2103,
+        "actual_card_hours": 0.5841666666666666,
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "step_b",
+        "slurm_job_id": "986",
+        "state": "COMPLETED",
+        "elapsed_seconds": 2065,
+        "actual_card_hours": 0.5736111111111111,
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "step_readout",
+        "slurm_job_id": "987",
+        "state": "COMPLETED",
+        "elapsed_seconds": 72,
+        "actual_card_hours": 0.02,
+        "hard_card_hours": 0.25
+      },
+      {
+        "name": "grid_lr2em5_u2",
+        "slurm_job_id": "988",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr2em5_u1",
+        "slurm_job_id": "989",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr5em5_u2",
+        "slurm_job_id": "990",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr5em5_u1",
+        "slurm_job_id": "991",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr1em4_u2",
+        "slurm_job_id": "992",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr1em4_u1",
+        "slurm_job_id": "993",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr3em4_u2",
+        "slurm_job_id": "994",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_lr3em4_u1",
+        "slurm_job_id": "995",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "grid_readout",
+        "slurm_job_id": "996",
+        "state": "PENDING",
+        "hard_card_hours": 0.17
+      },
+      {
+        "name": "rsi_check_1",
+        "slurm_job_id": "997",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "rsi_check_2",
+        "slurm_job_id": "998",
+        "state": "PENDING",
+        "hard_card_hours": 0.75
+      },
+      {
+        "name": "g2_r1",
+        "slurm_job_id": "1009",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "g2_ro1",
+        "slurm_job_id": "1010",
+        "state": "PENDING",
+        "hard_card_hours": 0.17
+      },
+      {
+        "name": "g2_r2",
+        "slurm_job_id": "1011",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "g2_ro2",
+        "slurm_job_id": "1012",
+        "state": "PENDING",
+        "hard_card_hours": 0.17
+      },
+      {
+        "name": "g2_r3",
+        "slurm_job_id": "1013",
+        "state": "PENDING",
+        "hard_card_hours": 0.7
+      },
+      {
+        "name": "g2_ro3",
+        "slurm_job_id": "1014",
+        "state": "PENDING",
+        "hard_card_hours": 0.17
+      },
+      {
+        "name": "g2_eval_s2",
+        "slurm_job_id": "1015",
+        "state": "PENDING",
+        "hard_card_hours": 1.0
+      },
+      {
+        "name": "g2_eval_s3",
+        "slurm_job_id": "1016",
+        "state": "PENDING",
+        "hard_card_hours": 1.0
       }
     ],
-    "note": "Snapshot of the local accounting ledger; missing fields are not assumed to be zero."
+    "note": "Snapshot of the local accounting ledger; missing fields are not assumed to be zero. Header totals disagree. Original values are preserved; reconcile the source ledger before treating them as current settled spending or remaining capacity.",
+    "header_sum_card_hours": 44.52527777777779,
+    "header_totals_consistent": false
   },
   "FORMAL_DFT_DIAG.json": {
     "schema": "formal12-dft-diag-v1",
     "actual_card_hours": 8.421666666666667,
     "reserved_card_hours": 0,
-    "updated_at_utc": "2026-10-27T06:02:12.886132+00:00",
+    "updated_at_utc": "2026-10-27T06:44:32.852409+00:00",
     "pool_actual_before_card_hours": 20.486944444444443,
     "diag_cap_card_hours": 18.6,
     "jobs": [
@@ -2000,7 +2181,7 @@
     "schema": "formal12-md-v1",
     "authorized_card_hours": 40.0,
     "actual_card_hours": 0.5341666666666667,
-    "updated_at_utc": "2026-10-27T06:02:12.886132+00:00",
+    "updated_at_utc": "2026-10-27T06:44:32.852409+00:00",
     "jobs": [
       {
         "slurm_job_id": "738",

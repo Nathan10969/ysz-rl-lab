@@ -9,12 +9,14 @@
 | 4 条轨迹有好有坏，怎样更新？ | 回报、组内优势、概率比、KL | [SFT 到 GRPO](sft-and-grpo.md) |
 | 输出合法了，为什么搜索仍不更好？ | 约束解码、行为质量 | [约束与对照](constraints-and-evidence.md) |
 | 分数涨了，为什么还不能宣布成功？ | 配对比较、验证集、标准误差 | [约束与对照](constraints-and-evidence.md) |
+| 调参后 C 从 0.022 到 0.406，实际改变了什么？ | 贪心偏好、物理终点、开发数据 | [训练与诊断](training-and-diagnostics.md) |
 
 ## 阅读顺序
 
 1. 先读 [环境与奖励](environment.md)，把一次真实动作走通。
 2. 再读 [SFT 到 GRPO](sft-and-grpo.md)，对应代码理解输入、计算与更新。
 3. 最后读 [约束与对照](constraints-and-evidence.md)，用真实结果判断学到了什么。
+4. 用 [本轮网格](training-and-diagnostics.md) 理解“学习读数变化”与“搜索收益”的关系。
 
 ## 怎样继续记录
 

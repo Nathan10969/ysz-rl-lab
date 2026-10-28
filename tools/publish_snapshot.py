@@ -30,6 +30,7 @@ def sha(data: bytes) -> str:
 def clean(text: str) -> str:
     """Replace machine/user identifiers while retaining relative paths and scientific numbers."""
     text = re.sub(r"/Users/[^/\s\"'`<>]+", "/LOCAL_HOME", text)
+    text = re.sub(r"~/\.rsi_sealed/[^\s\"'`<>]+", "SEALED_SEED_FILE", text)
     text = re.sub(r"/data/home/[^/\s\"'`<>]+/[^/\s\"'`<>]+/(?:Jony/)?", "/CLUSTER_HOME/", text)
     text = re.sub(r"\byg\d{5,}\b", "CLUSTER_USER", text)
     text = re.sub(r"\b[A-Za-z][A-Za-z0-9_-]*-a100\b", "your-cluster", text)
@@ -81,6 +82,19 @@ def compact_result(name: str, result: dict) -> dict:
             record[key] = result[key]
     if result.get("updates"):
         record["optimizer_updates_recorded"] = len(result["updates"])
+    if result.get("schema") == "formal12-imitate-v1":
+        metric_keys = ("n", "captured_fraction", "argmax_accuracy", "optimal_mass", "chance_mass",
+                       "expected_dNN", "menu_min_dNN")
+        record["menu_preference"] = {
+            name: {split: {k: metrics[k] for k in metric_keys if k in metrics}
+                   for split, metrics in splits.items() if split in {"test", "train_fit"}}
+            for name, splits in result.get("eval", {}).items()}
+        record["diagnostic_data"] = {k: result["data"][k] for k in
+            ("train_rows", "test_rows", "train_fit_rows", "mean_optimal_set_size")
+            if k in result.get("data", {})}
+        record["diagnostic_scope"] = (
+            "Menu preference on development data; C is a frozen-heuristic score capture, "
+            "not physical energy improvement or a held-out final test.")
     record["per_start"] = per_start
     record["mean_best_of_4_drop_eV"] = statistics.mean(x["drop_eV"] for x in per_start) if per_start else None
     record["scope"] = "Derived from saved results. MACE eV per supercell; not final DFT validation."
@@ -102,6 +116,15 @@ def budget_summary(source: Path) -> tuple[dict, dict]:
         summary["jobs"] = [{k: j[k] for k in ("name", "slurm_job_id", "state", "elapsed_seconds", "actual_card_hours",
                            "card_hours", "hard_card_hours", "terminal") if k in j} for j in jobs]
         summary["note"] = "Snapshot of the local accounting ledger; missing fields are not assumed to be zero."
+        if all(isinstance(data.get(k), (int, float)) for k in
+               ("actual_card_hours", "reserved_card_hours", "actual_plus_reserved")):
+            summary["header_sum_card_hours"] = data["actual_card_hours"] + data["reserved_card_hours"]
+            summary["header_totals_consistent"] = math.isclose(
+                summary["header_sum_card_hours"], data["actual_plus_reserved"], abs_tol=1e-8)
+            if not summary["header_totals_consistent"]:
+                summary["note"] += (
+                    " Header totals disagree. Original values are preserved; reconcile the source ledger "
+                    "before treating them as current settled spending or remaining capacity.")
         out[filename] = summary
     return out, hashes
 

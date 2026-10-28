@@ -759,6 +759,22 @@
       "destination": "history/formal12/META_LOG.md"
     },
     {
+      "source": "formal12/scripts/formal12_imitate.py",
+      "destination": "research/formal12/scripts/formal12_imitate.py"
+    },
+    {
+      "source": "formal12/scripts/formal12_replay.py",
+      "destination": "research/formal12/scripts/formal12_replay.py"
+    },
+    {
+      "source": "rsi/RSI_LOG.md",
+      "destination": "history/rsi/RSI_LOG.md"
+    },
+    {
+      "source": "rsi/RSI_YSZ_BUILD_PLAN.md",
+      "destination": "history/rsi/RSI_YSZ_BUILD_PLAN.md"
+    },
+    {
       "source": "formal12/val_metric.py",
       "destination": "research/formal12/val_metric.py"
     },

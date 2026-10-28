@@ -9,6 +9,24 @@
     "mean_best_of_4_drop_eV": 1.6272545570373798
   },
   {
+    "job": "grid_readout",
+    "status": "COMPLETED",
+    "stage": null,
+    "arm": null,
+    "seed": null,
+    "round": null,
+    "mean_best_of_4_drop_eV": null
+  },
+  {
+    "job": "imit_greedy",
+    "status": "COMPLETED",
+    "stage": null,
+    "arm": null,
+    "seed": null,
+    "round": null,
+    "mean_best_of_4_drop_eV": null
+  },
+  {
     "job": "meta_s0_eval",
     "status": "COMPLETED",
     "stage": "blind",
@@ -162,6 +180,15 @@
     "mean_best_of_4_drop_eV": 2.11068331064007
   },
   {
+    "job": "meta_s6_eval",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "frozen",
+    "seed": 2026102301,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.8513804397098284
+  },
+  {
     "job": "meta_s6_greedy",
     "status": "COMPLETED",
     "stage": "blind",
@@ -196,6 +223,51 @@
     "seed": 2026102301,
     "round": 1,
     "mean_best_of_4_drop_eV": 1.7412651049359056
+  },
+  {
+    "job": "meta_s6b_train",
+    "status": "COMPLETED",
+    "stage": "round",
+    "arm": "grpo_traj",
+    "seed": 2026102301,
+    "round": 1,
+    "mean_best_of_4_drop_eV": 1.5222865168413477
+  },
+  {
+    "job": "rep_s2_greedy",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "greedy",
+    "seed": 2026102302,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 2.7415216638030606
+  },
+  {
+    "job": "rep_s2_menurandom",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "menurandom",
+    "seed": 2026102302,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 1.9458301331975842
+  },
+  {
+    "job": "rep_s3_greedy",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "greedy",
+    "seed": 2026102303,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 3.03344820712501
+  },
+  {
+    "job": "rep_s3_menurandom",
+    "status": "COMPLETED",
+    "stage": "blind",
+    "arm": "menurandom",
+    "seed": 2026102303,
+    "round": 0,
+    "mean_best_of_4_drop_eV": 2.019791397789504
   },
   {
     "job": "s1_d0sft",
@@ -439,6 +511,15 @@
     "seed": 2026102302,
     "round": 1,
     "mean_best_of_4_drop_eV": 1.93125719841467
+  },
+  {
+    "job": "step_readout",
+    "status": "COMPLETED",
+    "stage": null,
+    "arm": null,
+    "seed": null,
+    "round": null,
+    "mean_best_of_4_drop_eV": null
   },
   {
     "job": "tune_it_1e-4_e2_eval",
